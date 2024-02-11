@@ -253,6 +253,38 @@ nav{
     flex-basis: 33%;
 }
 .post-col{
-    background: plum;
     flex-basis: 65%;
+}
+.post-col img{
+    width: 100%;
+    overflow: hidden;
+    object-fit: cover;
+    height: 800px;
+}
+.profile-intro{
+    background: #575757;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 4px;  
+    align-items: center;  
+}
+.profile-info .info{
+    display: flex;
+    align-items: center;
+}
+.profile-intro h3{
+    background: #575757;
+    padding-bottom: 15px;
+}
+.profile-intro p{
+    color: #fff;
+    margin-left: 10px;
+    padding: 10px;
+    align-items: center;
+}
+.profile-intro img{
+    align-items: center;
+    width: 18px;
+    margin-left: 0px;
+    vertical-align: middle;
 }
