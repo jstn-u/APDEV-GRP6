@@ -46,6 +46,9 @@ nav{
 
 
 /* sidebar */
+.sidebar{
+    display: none;
+}
 .shortcut-links{
     width: fit-content;
 }
@@ -55,11 +58,8 @@ nav{
     margin-right: 15px;
 }
 .small-sidebar{
-    display: none;
+    display:contents;
 }
-
-
-
 .nav-left .line {
     display: inline-block;
     height: 32px; /* Adjust as needed */
@@ -70,13 +70,15 @@ nav{
     vertical-align: center; /* Align with the middle of the images */
 }
 
-
-
+/* logo & search */
 
 .nav-left .logo{
     width: 100px;
 }
 .nav-middle .search-box{
+    position: fixed;
+    right: 733px;
+    /* left: 100px; */
     border: 1px solid #ccc;
     margin-right: 15px;
     padding: 8px 12px;
@@ -239,4 +241,39 @@ nav{
 }
 .pd-right button:hover{
     color: #ccc;
+}
+
+.profile-info{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.info-col{
+    flex-basis: 33%;
+}
+.post-col{
+    flex-basis: 65%;
+}
+.post-col img{
+    width: 100%;
+    overflow: hidden;
+    object-fit: cover;
+    height: 800px;
+}
+.profile-intro{
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+.profile-intro h3{
+    color: #121212;
+    font-weight: 600;
+}
+.profile-intro h4{
+    color: #121212;
+}
+.profile-intro p{
+    color: #121212;
 }
