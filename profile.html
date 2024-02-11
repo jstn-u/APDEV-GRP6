@@ -4,13 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="style-home.css">
+    <link rel="stylesheet" href="style-profile.css">
 </head>
 <body>
 <!-- header -->
     <nav class="flex-div">
         <div class="nav-left flex-div">
             <img src="images/menu.png" class="menu-icon">
+            <div class="sidebar">
+                <div class="shortcut-links">            
+                    <a href="profile.html"><img src="images/profile.png"></a>
+                    <a href="home.html"><img src="images/home.png"></a>
+                    <a href=""><img src="images/paw-heart.png"></a>
+                    <a href=""><img src="images/paw.png"></a>
+                    <a href=""><img src="images/address-book.png"></a>
+                    <span class="line"></span> 
+                </div>
+            </div>
+            
             <img src="images/logo.png" class="logo">
         </div>
         <div class="nav-middle flex-div">
@@ -35,7 +46,7 @@
                 </div>
             </div>
         <a href="profile.html" class="sub-menu-link">
-            <img src="images/user.png">
+            <img src="images/profile.png">
             <p>Edit Profile</p>
         </a>
         <a href="#" class="sub-menu-link">
@@ -47,8 +58,6 @@
             <p>Log Out</p>
         </a>
         </div>
-        
-
     </nav>
 
 <script>
@@ -58,30 +67,32 @@
         subMenu.classList.toggle("open-menu");
     }
 </script>
-
-<div class="container">
-    <!-- left sidebar -->
-    <div class="sidebar">
-        <div class="shortcut-links">            
-            <a href="profile.html"><img src="images/profile.png"><p>Profile</p></a>
-            <a href=""><img src="images/home.png"><p>Home</p></a>
-            <a href=""><img src="images/paw-heart.png"><p>Lost and Found</p></a>
-            <a href=""><img src="images/paw.png"><p>Adoption Library</p></a>
-            <a href=""><img src="images/address-book.png"><p>Emergency Contacts</p></a>
-            <hr>
+    
+<!-- profile page middle content -->
+<div class="profile-container">
+    <img src="images/banner.png" class="cover-img">
+    <div class="profile-details">
+        <div class="pd-left">
+            <div class="pd-row">
+                <img src="images/profile-pic.png" class="pd-image">
+                <div>
+                    <h3>username</h3>
+                    <p>"Digital Nomad & Espresso Enthusiast 🌍✈️ | Tech Innovator 💡| Aspiring Polyglot 📚| Part-time Poet 🖋️| Full-time Dreamer 💭| Lover of the stars and everything in between 🌌| Seeking the magic in the mundane | Let's make the impossible, possible together 🚀"</p>
+                </div>
+            </div>
+        </div>
+        <div class="pd-right">
+            <button type="button"><img src="images/pencil.png"> Edit Profile</button>
         </div>
     </div>
-    <div class="main-content"></div>
-    <div class="right-sidebar"></div>
 </div>
-    
+
 <script>
     let menuIcon = document.querySelector(".menu-icon")
     let sidebar = document.querySelector(".sidebar")
 
     menuIcon.onclick = function(){
-        sidebar.classList.toggle("small-sidebar");
-        
+        sidebar.classList.toggle("small-sidebar");        
     }
 </script>
 
