@@ -1,15 +1,32 @@
-
+:root {
+    /** CSS DARK THEME PRIMARY COLORS */
+    --color-primary-100: #f44336;
+    --color-primary-200: #f95e4a;
+    --color-primary-300: #fe755f;
+    --color-primary-400: #ff8a75;
+    --color-primary-500: #ff9f8a;
+    --color-primary-600: #ffb2a1;
+  
+    /** CSS DARK THEME SURFACE COLORS */
+    --color-surface-100: #121212;
+    --color-surface-200: #282828;
+    --color-surface-300: #3f3f3f;
+    --color-surface-400: #575757;
+    --color-surface-500: #717171;
+    --color-surface-600: #8b8b8b;
+    --color-surface-700: #fff;
+  }
+  
 /* header */
 *{
     margin: 0;
     padding: 0;
     font-family: "Poppins", sans-serif;
     box-sizing: border-box;
-    /* background-color: #121212; */
 }
 a{
     text-decoration: none;
-    color: #fff;
+    color: var(--color-surface-700);
 }
 img{
     cursor: pointer;
@@ -19,10 +36,13 @@ img{
     align-items: center;
 }
 nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     padding: 10px 2%;
     justify-content: space-between;
-    /* box-shadow: 0 0 10px rgba(0,0,0,0.2); */
-    background: #121212;
+    box-shadow: 0 0 10px rgba(0,0,0,.2); 
+    background-color: var(--color-surface-200);
     position: sticky;
     top: 0;
     z-index: 10;
@@ -45,29 +65,30 @@ nav{
 }
 
 
-/* sidebar */
+/* expandable sidebar */
 .sidebar{
     display: none;
-}
-.shortcut-links{
-    width: fit-content;
 }
 .shortcut-links img{
     width: 25px;
     margin: 5px;
     margin-right: 15px;
+    transition: transform 0.3s ease;
+}
+.shortcut-links img:hover {
+  transform: scale(1.15); 
 }
 .small-sidebar{
     display:contents;
 }
 .nav-left .line {
     display: inline-block;
-    height: 32px; /* Adjust as needed */
-    width: 0.5px; /* Thin vertical line */
-    background-color: grey; /* Line color */
-    margin-right: 20px; /* Space between the line and the image */
+    height: 32px; 
+    width: 0.5px;
+    background-color: grey;
+    margin-right: 20px; 
     margin-left: 5px;
-    vertical-align: center; /* Align with the middle of the images */
+    vertical-align: center; 
 }
 
 /* logo & search */
@@ -75,10 +96,16 @@ nav{
 .nav-left .logo{
     width: 100px;
 }
+.nav-middle {
+    flex-grow: 1; 
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
 .nav-middle .search-box{
-    position: fixed;
-    right: 733px;
-    /* left: 100px; */
+    position: relative;
+    display: flex;
+    justify-content: center;
     border: 1px solid #ccc;
     margin-right: 15px;
     padding: 8px 12px;
@@ -93,21 +120,25 @@ nav{
 .nav-middle .search-box img{
     width: 15px;
 }
+.nav-left .nav-right{
+    flex: 1;
+}
 
 /* dropdown */
 .sub-menu-wrap{
     position: absolute;
     top: 100%;
     right: 50px;
-    width: 250px;
+    width: 200px;
     max-height: 0px;    
     overflow: hidden;
-    background-color:#1a1625;
+    background-color:var(--color-surface-100);
     border-radius: 15px;
 }
 
 .sub-menu-wrap.open-menu{
-    max-height: 400px;
+    max-height: 500px;
+    padding-bottom: 15px;
 }
 
 .sub-menu{
@@ -121,11 +152,11 @@ nav{
     display: flex;
     align-items: center;
     color: #fff;
-    font-size: 14px;
 }
 .user-info h2{
     background: transparent;
     font-weight: 500;
+    font-size: 20px;
 }
 
 .user-info img{
@@ -141,7 +172,7 @@ nav{
     align-items: center;
     text-decoration: none;
     color: #fff;
-    font-size: 14px;
+    font-size: 12px;
     margin: 12px 0;
     margin-left: 20px;
 }
@@ -170,28 +201,33 @@ nav{
 
 /* profile */
 
-.profile-container {
-    padding: 20px 15%;
+.profile-container1 {
+    padding: 0 15%;
+}
+.profile-container2 {
+    padding: 20px 17.5%;
     color: #fff;
-    background-color: #282828;
-
+    background-color: var(--color-surface-100);
+}
+.profile-top{    
+    background-color: var(--color-surface-200);
+    color: var(--color-surface-700);
 }
 .cover-img {
+    position: relative;
     width: 100%;
-    height: 300px;
-    border-radius: 6px;
+    height: 350px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     overflow: hidden;
     object-fit: cover;
     /* margin-bottom: 14px; */
 }
 .profile-details{
-    background: #282828;
-    padding: 20px;
-    border-radius: 4px;
+    padding: 25px;
     display:flex;
     align-items: flex-start;
     justify-content: space-between;
-    background-color: #282828;
 }
 .pd-row {
     display: flex;
@@ -200,47 +236,51 @@ nav{
     width: 90%;
 }
 .pd-image{
-    width: 300px;
-    margin-right: 20px;
+    position: absolute;
+    top: 330px;
+    width: 200px;
+    margin-left: 20px;
     border: solid 5px #282828;
     border-radius: 50%;
     background-color: #282828;
 }
 .pd-row div h3 {
+    margin-left: 250px;
     font-size: 25px;
     font-weight: 600;
     background-color: #282828;
 }
 .pd-row div p{
+    margin-left: 250px;
     font-size: 12px;
     background-color: #282828;
     padding-top: 10px;
 }
 
 .pd-right{
-    background: #282828;
+    /* background: #282828; */
     width: 200px;
+    margin-right: 15px;
 }
 
 .pd-right button{
-    background: #575757;
+    background: var(--color-surface-500);
+    color: var(--color-surface-700);
     border: 0;
     outline: 0;
     padding: 10px 15px;
     display: inline-flex;
-    align-items: center;
-    color: #fff;
+    align-items: center;    
     border-radius: 4px;
     margin-left: 10px;
     cursor: pointer;
 }
 .pd-right button img {
-    background-color: #575757;
     height: 15px;
     margin-right: 10px;
 }
 .pd-right button:hover{
-    color: #ccc;
+    background-color: var(--color-surface-600);
 }
 
 .profile-info{
@@ -260,12 +300,13 @@ nav{
     overflow: hidden;
     object-fit: cover;
     height: 800px;
+    border-radius: 10px;
 }
 .profile-intro{
-    background: #575757;
+    background-color: var(--color-surface-200);
     padding: 20px;
     margin-bottom: 20px;
-    border-radius: 4px;  
+    border-radius: 10px;  
     align-items: center;  
 }
 .profile-info .info{
@@ -273,11 +314,12 @@ nav{
     align-items: center;
 }
 .profile-intro h3{
-    background: #575757;
+    color: var(--color-surface-700);
+    font-weight: 700;
     padding-bottom: 15px;
 }
 .profile-intro p{
-    color: #fff;
+    color: var(--color-surface-700);
     margin-left: 10px;
     padding: 10px;
     align-items: center;
