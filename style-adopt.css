@@ -227,6 +227,60 @@ nav{
     font-weight: 600;
 }
 
+.tag-container button {
+    background: var(--color-surface-200);
+    border: none;
+    color: var(--color-surface-700);
+    margin: 10px 2px;
+    padding: 8px 8px;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 20px;
+    outline-offset: -2px;
+    text-decoration: none;
+    transition: transform 0.1s ease;
+}
+
+.tag-container2 button {
+    background: var(--color-surface-200);
+    border: none;
+    color: var(--color-surface-700);
+    margin: 10px 2px;
+    padding: 8px 8px;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 20px;
+    outline-offset: -2px;
+    text-decoration: none;
+    transition: transform 0.1s ease;
+    position: absolute;
+    right: 35px;
+    color: rgb(139, 175, 254);
+}
+
+.tag-container3 button {
+    background: var(--color-surface-200);
+    border: none;
+    color: var(--color-surface-700);
+    margin: 10px 2px;
+    padding: 8px 8px;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 20px;
+    outline-offset: -2px;
+    text-decoration: none;
+    transition: transform 0.1s ease;
+}
+
+.tag-container button:hover {
+    transform: scale(1.1); 
+    font-weight: 600;
+}
+
+.tag-container2 button:hover {
+    transform: scale(1.1); 
+    font-weight: 600;
+}
 
 .small-sidebar{
     width: 90px;
@@ -308,12 +362,110 @@ nav{
     color: var(--color-primary-500);
 }
 
+/* body */
 .main-content{
     padding: 20px 17.5%;
+    background: #121212;
 }
-.mock-post{
-    height: 800px;
-    overflow: hidden;
-    object-fit: cover;
-    border-radius: 10px;
+
+.post-box{
+    margin: 5px;
+    margin-bottom: 10px;
+    height: 400px;
+    width: 1000px;
+    border: solid 1px;
+    background: white;
+    border-radius: 7px;
+    display: flex;
+}
+
+.post-column {
+    flex-direction: column;
+    width: 300px;
+    height: 400px;
+}
+
+.post-column-middle {
+    flex-direction: column;
+    width: 600px;
+    height: 400px;
+}
+
+.post-image{
+    margin: 20px;
+    width: 86%;
+    border-radius: 5px;
+}
+
+.post-name{
+    margin-top: 5px;
+    border-bottom: solid 1px;
+    margin-left: 36px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    width: 225px;
+    text-align: center;
+}
+
+.post-info {
+    margin-top: 5px;
+    margin-left: 25px;
+    font-size: 10px;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    width: 250px;
+    text-align: center;
+    color: rgb(100, 100, 100);
+}
+
+.title{
+    margin-top:50px;
+    margin-bottom: 5px;
+    margin-left: 30px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    width: 550px;
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.text-box{
+    margin-top: 10px;
+    margin-left: 30px;
+    width: 550px;
+    height: 240px;
+    border: solid 1px;
+    padding: 10px;
+}
+.text{
+    font-size: 12px;
+    font-family: "Poppins", sans-serif;
+}
+
+.username{
+    margin-left: 30px;
+    font-size: 12px;
+}
+
+.margin{
+    margin-left: 30px;
+}
+
+.vote{
+    margin: 10px;
+    width: 25%;
+    border-radius: 5px;
+    margin-left: 55px;
+}
+
+.upvote{
+    margin-top: 40px;
 }
