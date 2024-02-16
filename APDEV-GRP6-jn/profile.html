@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style-profile.css">
+</head>
+<body>
+<!-- header -->
+    <nav class="flex-div">
+        <div class="nav-left flex-div">
+            <img src="images/angle-small-right.png" class="menu-icon">
+            <div class="sidebar">
+                <div class="shortcut-links">            
+                    <a href="profile.html"><img src="images/profile.png"></a>
+                    <a href="home.html"><img src="images/home.png"></a>
+                    <a href=""><img src="images/paw-heart.png"></a>
+                    <a href=""><img src="images/paw.png"></a>
+                    <a href=""><img src="images/address-book.png"></a>
+                    <span class="line"></span> 
+                </div>
+            </div>
+            
+            <img src="images/logo.png" class="logo">
+        </div>
+        <div class="nav-middle flex-div">
+            <div class="search-box flex-div">
+                <input type="text" placeholder="Search">
+                <img src="images/search.png">
+            </div>
+        </div>
+        <div class="nav-right flex-div">
+            <img src="images/plus.png">
+            <img src="images/bell.png">
+            <img src="images/profile-pic.png" class="user-icon" onclick="toggleMenu()">
+            <img src="images/dropdown.png" class="user-icon" onclick="toggleMenu()">
+        </div>     
+        
+    <!-- dropdown -->
+        <div class="sub-menu-wrap" id="subMenu">
+            <div class="sub-menu">
+                <div class="user-info">
+                    <img src="images/profile-pic.png">
+                    <h2>username</h2>
+                </div>
+            </div>
+        <a href="edit-profile.html" class="sub-menu-link">
+            <img src="images/profile.png">
+            <p>Edit Profile</p>
+        </a>
+        <a href="#" class="sub-menu-link">
+            <img src="images/settings.png">
+            <p>Settings</p>
+        </a>
+        <a href="log-in.html" class="sub-menu-link">
+            <img src="images/exit.png">
+            <p>Log Out</p>
+        </a>
+        </div>
+    </nav>
+
+<script>
+    let subMenu = document.getElementById("subMenu");
+
+    function toggleMenu(){
+        subMenu.classList.toggle("open-menu");
+    }
+</script>
+    
+<!-- profile page middle content -->
+    <div class="profile-top"> 
+        <div class="profile-container1">        
+            <img src="images/banner.png" class="cover-img">
+            <div class="profile-details">
+                <div class="pd-left">
+                    <div class="pd-row">
+                        <img src="images/profile-pic.png" class="pd-image">
+                        <div>
+                            <h3>username</h3>
+                            <p>"Digital Nomad & Espresso Enthusiast 🌍✈️ | Tech Innovator 💡| Aspiring Polyglot 📚| Part-time Poet 🖋️| Full-time Dreamer 💭| Lover of the stars and everything in between 🌌| Seeking the magic in the mundane | Let's make the impossible, possible together 🚀"</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="pd-right">
+                    <a href="edit-profile.html"><button type="button"><img src="images/pencil.png"> Edit Profile</button></a>
+                </div>
+            </div>
+        </div> 
+    </div>  
+        <div class="profile-container2">   
+            <div class="profile-info">
+                <div class="info-col">
+                    <div class="profile-intro">
+                        <!-- link to database -->
+                        <h3>Intro</h3>
+                        <div class="info">
+                            <img src="images/calendar.png" class="info-icon">
+                            <p>Birthday:</p>
+                        </div>
+                            
+                        <div class="info">
+                            <img src="images/phone-call.png" class="info-icon">
+                            <p>Phone:</p>
+                        </div>         
+                        <div class="info">
+                            <img src="images/mail.png" class="info-icon">
+                            <p>Mail:</p>
+                        </div>         
+                        <div class="info">
+                            <img src="images/marker.png" class="info-icon">
+                            <p>Location:</p>
+                        </div>         
+                        
+                    </div>
+                </div>
+                <div class="post-col">
+                    <img src="images/mock.jpg">
+                </div>
+            </div>
+        </div>
+</div>
+
+<script>
+    let menuIcon = document.querySelector(".menu-icon")
+    let sidebar = document.querySelector(".sidebar")
+
+    menuIcon.onclick = function(){
+        sidebar.classList.toggle("small-sidebar");        
+    }
+</script>
+
+</body>
+</html>
