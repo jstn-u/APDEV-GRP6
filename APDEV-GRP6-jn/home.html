@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style-home.css">
+    <link rel="stylesheet" href="style-lost-found.css">
+</head>
+<body>
+<!-- header -->
+    <nav class="flex-div">
+        <div class="nav-left flex-div">
+            <img src="images/menu.png" class="menu-icon">
+            <img src="images/logo.png" class="logo">
+        </div>
+        <div class="nav-middle flex-div">
+            <div class="search-box flex-div">
+                <input type="text" placeholder="Search">
+                <img src="images/search.png">
+            </div>
+        </div>
+        <div class="nav-right flex-div">
+            <img src="images/plus.png">
+            <img src="images/bell.png">
+            <img src="images/profile-pic.png" class="user-icon" onclick="toggleMenu()">
+            <img src="images/dropdown.png" class="user-icon" onclick="toggleMenu()">
+        </div>     
+        
+    <!-- dropdown -->
+        <div class="sub-menu-wrap" id="subMenu">
+            <div class="sub-menu">
+                <div class="user-info">
+                    <img src="images/profile-pic.png">
+                    <h2>User Name</h2>
+                </div>
+            </div>
+        <a href="edit-profile.html" class="sub-menu-link">
+            <img src="images/user.png">
+            <p>Edit Profile</p>
+        </a>
+        <a href="#" class="sub-menu-link">
+            <img src="images/settings.png">
+            <p>Settings</p>
+        </a>
+        <a href="log-in.html" class="sub-menu-link">
+            <img src="images/exit.png">
+            <p>Log Out</p>
+        </a>
+    </div>
+</nav>
+
+    <div class="container">
+        <!-- left sidebar -->
+        <div class="sidebar">
+            <div class="shortcut-links">            
+                <a href="profile.html"><img src="images/profile.png"><p>Profile</p></a>
+                <a href="home.html"><img src="images/home.png"><p>Home</p></a>
+                <a href="lost-found.html"><img src="images/paw-heart.png"><p>Lost and Found</p></a>
+                <a href="foster-adoption.html"><img src="images/paw.png"><p>Adoption Library</p></a>
+                <a href=""><img src="images/address-book.png"><p>Emergency Contacts</p></a>
+                <hr>
+            </div>
+            <div class="button-container">
+                <button>Videos</button>
+                <button>Meaning</button>
+                <button>Images</button>
+                <button>Shopping</button>
+                <button>News</button>
+                <button>Maps</button>
+                <button>Books</button>
+                <button>Flights</button>
+                <button>Finance</button>
+            </div> 
+        </div>
+        <div class="main-content">
+            <div class="column">
+                    <div class="black-box">
+                        <div class="straight-c">
+                            <div class="straight-r">
+                                <img src="images/profile-pic.png" class="profile-pic">
+                                <h4>ILuvGingerCats</h4>
+                            </div>
+                        <div class="textbox">
+                            <h6> Write something here... </h6> 
+                        </div>
+                        <div class="post-button">
+                            <h5>POST</h5>
+                        </div>
+                        </div>
+                    </div>
+    
+                <!-- POST 1 -->
+    
+                <div class ="post-box">
+                    <div class="row">
+                        <img src="images/girl1.png" class="profile-pic2">
+                        <div class="left">
+                            <a href="post1.html" class="post-link">
+                                <h3>Anyone owns this huskey?</h3>
+                            </a>
+                            <h9>by Marianne C.</h9>
+                        </div>
+                        <div class="vote-icons">
+                            <img src="images/arrow-circle-up.png" class= "vote" alt="">
+                            <img src="images/arrow-circle-down.png" class= "vote" alt="">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="column1">
+                            <h8>Found this lost Husky in front of my house. Whoever owns this adorable furball message me ASAP!!!
+                                Owner you better reply to me soon OR ELSE I will really end up keeping him:> 
+                                I think I'll name him Snow
+                            </h8>
+                            <div class="row1">
+                                <img src="images/heart.png" class= "heart" alt="heart">
+                                <h10>30</h10>
+                                <img src="images/comment-dots.png" class= "comment" alt="comment">
+                                <h10>6</h10>
+                                <div class="tag"><h11>#lost</h11></div>
+                                <div class="tag"><h11>#dog</h11></div>
+                                <div class="tag"><h11>#huskey</h11></div>
+                            </div>
+                        </div>
+                        <img src="images/huskey.jpg" class= "post-pic" alt="huskey">
+                    </div>  
+                </div>
+    
+                <!-- POST 2 -->
+    
+                <div class ="post-box">
+                    <div class="row">
+                        <img src="images/catprofpic.jpg" class="profile-pic2">
+                        <div class="left">
+                            <a href="post2.html" class="post-link">
+                                <h3>FINALLY FOUND MY CAT THANKS GUYS</h3>
+                            </a>
+                            <h9>by CatLover</h9>
+                        </div>
+                        <div class="vote-icons">
+                            <img src="images/arrow-circle-up.png" class= "vote" alt="">
+                            <img src="images/arrow-circle-down.png" class= "vote" alt="">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="column1">
+                            <h8>No because I'm so thankful to this communinity. I thought I would never see my cat again 
+                                but you guys actually found Cinnamon for me! I'm so happy that I get to see my cat again. 
+                                Thank you so much guys I owe you guys the world
+                            </h8>
+                            <div class="row1">
+                                <img src="images/heart.png" class= "heart" alt="heart">
+                                <h10>121</h10>
+                                <img src="images/comment-dots.png" class= "comment" alt="comment">
+                                <h10>12</h10>
+                                <div class="tag"><h11>#found</h11></div>
+                                <div class="tag"><h11>#cat</h11></div>
+                                <div class="tag"><h11>#manx</h11></div>
+                            </div>
+                        </div>
+                        <img src="images/redcat.jpg" class= "post-pic" alt="huskey">
+                    </div>  
+                </div>
+    
+                <!-- POST 3 -->
+    
+                <div class ="post-box">
+                    <div class="row">
+                        <img src="images/guy1.png" class="profile-pic2">
+                        <div class="left">
+                            <a href="post3.html" class="post-link">
+                                <h3>HELP: Find Loud Chihuahua</h3>
+                            </a>
+                            <h9>by JustJake</h9>
+                        </div>
+                        <div class="vote-icons">
+                            <img src="images/arrow-circle-up.png" class= "vote" alt="">
+                            <img src="images/arrow-circle-down.png" class= "vote" alt="">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="column1">
+                            <h8>I lost my Chihuahua in BGC, he should be there somewhere.
+                                He is teacup sized and really LOUD (as in really loud). If you see a loud chihuahua barking that's probably mine.
+                                Please reply to this thread if you see him.
+                            </h8>
+                            <div class="row1">
+                                <img src="images/heart.png" class= "heart" alt="heart">
+                                <h10>317</h10>
+                                <img src="images/comment-dots.png" class= "comment" alt="comment">
+                                <h10>44</h10>
+                                <div class="tag"><h11>#lost</h11></div>
+                                <div class="tag"><h11>#dog</h11></div>
+                                <div class="tag"><h11>#chihuahua</h11></div>
+                            </div>
+                        </div>
+                        <img src="images/chihuahua.jpg" class= "post-pic" alt="huskey">
+                    </div>  
+                </div>
+    
+                <!-- POST 4 -->
+    
+                <div class ="post-box">
+                    <div class="row">
+                        <img src="images/girl2.png" class="profile-pic2">
+                        <div class="left">
+                            <h3>Finding a Black Dog with long hair</h3>
+                            <h9>by Danica Lee</h9>
+                        </div>
+                        <div class="vote-icons">
+                            <img src="images/arrow-circle-up.png" class= "vote" alt="">
+                            <img src="images/arrow-circle-down.png" class= "vote" alt="">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="column1">
+                            <h8>Finding for my black dog that ran away from home. Please reply if you saw her.
+                                She's kinda impossible to not spot because she sticks out like a sore thumb. Refer to the picture here.
+                                Message here as soon as you guys spot her.
+                            </h8>
+                            <div class="row1">
+                                <img src="images/heart.png" class= "heart" alt="heart">
+                                <h10>162</h10>
+                                <img src="images/comment-dots.png" class= "comment" alt="comment">
+                                <h10>29</h10>
+                                <div class="tag"><h11>#lost</h11></div>
+                                <div class="tag"><h11>#dog</h11></div>
+                                <div class="tag"><h11>#hariydog</h11></div>
+                            </div>
+                        </div>
+                        <img src="images/furdog.jpg" class= "post-pic" alt="huskey">
+                    </div>  
+                </div>
+    
+                <!-- POST 5 -->
+    
+                <div class ="post-box">
+                    <div class="row">
+                        <img src="images/cat1.jpg" class="profile-pic2">
+                        <div class="left">
+                            <h3>Mint has been returned!</h3>
+                            <h9>by PawPaw</h9>
+                        </div>
+                        <div class="vote-icons">
+                            <img src="images/arrow-circle-up.png" class= "vote" alt="">
+                            <img src="images/arrow-circle-down.png" class= "vote" alt="">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="column1">
+                            <h8>First of all thank you @koolkid for returning my cat back to me, but I don't
+                                appreciate that you kept him for 3 months before you gave my cat back. Still,
+                                thanks for finding my cat and for feeding him.
+                            </h8>
+                            <div class="row1">
+                                <img src="images/heart.png" class= "heart" alt="heart">
+                                <h10>288</h10>
+                                <img src="images/comment-dots.png" class= "comment" alt="comment">
+                                <h10>73</h10>
+                                <div class="tag"><h11>#found</h11></div>
+                                <div class="tag"><h11>#cat</h11></div>
+                                <div class="tag"><h11>#returned</h11></div>
+                            </div>
+                        </div>
+                        <img src="images/greycat.avif" class= "post-pic" alt="huskey">
+                    </div>  
+                </div>
+            </div>
+        </div>
+        <div class="right-sidebar">
+            <div class="right-title">
+                <img src="images/address-book.png">
+                <h2>Emergency Contacts</h2>
+            </div>
+            <hr>
+            <div class="right-info">
+                <div class="contacts">
+                    <div class="contact-label">
+                        <img src="images/marker.webp"><h4>Sunnydale Veterinary Clinic</h4>
+                    </div>
+                    <ul>
+                        <li>Address: 124 Oak Street, Sunnydale, CA 94086</li>
+                        <li>Phone: (555) 123-4567</li>
+                        <li>Email: <span class="email">info@sunnydalevet.com</span></li>
+                        <li>Services: General checkups, vaccinations, emergency services</li>
+                    </ul>
+                </div>
+                <div class="contacts">
+                    <div class="contact-label">
+                        <img src="images/marker.webp"><h4>Riverbank Animal Hospital</h4>
+                    </div>
+                    <ul>
+                        <li>Address: 782 River Road, Springfield, IL 62704</li>
+                        <li>Phone: (555) 234-5678</li>
+                        <li>Email: <span class="email">contact@riverbankanimalhospital.com</span></li>
+                        <li>Services: Surgery, dental care, wellness exams</li>
+                    </ul>
+                </div>
+                <div class="contacts">
+                    <div class="contact-label">
+                        <img src="images/marker.webp"><h4>Greenfield Pet Clinic</h4>
+                    </div>
+                    <ul>
+                        <li>Address: 339 Green Street, Greenfield, IN 46140</li>
+                        <li>Phone: (555) 345-6789</li>
+                        <li>Email: <span class="email">support@greenfieldpetclinic.com</span></li>
+                        <li>Services: Diagnostic services, nutrition counseling, pharmacy</li>
+                    </ul>
+                </div>
+                <div class="contacts">
+                    <div class="contact-label">
+                        <img src="images/marker.webp"><h4>Harborview Veterinary Services</h4>
+                    </div>
+                    <ul>
+                        <li>Address: 560 Harborview Blvd, Miami, FL 33131</li>
+                        <li>Phone: (555) 456-7890</li>
+                        <li>Email: <span class="email">appointments@harborviewvet.com</span></li>
+                        <li>Services: Orthopedic surgery, dermatology, cardiology</li>
+                    </ul>
+                </div>
+                <div class="contacts">
+                    <div class="contact-label">
+                        <img src="images/marker.webp"><h4>Pine Ridge Veterinary Clinic</h4>
+                    </div>
+                    <ul>
+                        <li>Address: 890 Pine Ridge Road, Boulder, CO 80302</li>
+                        <li>Phone: (555) 567-8901</li>
+                        <li>Email: <span class="email">pinevet@pineridgeclinic.com</span></li>
+                        <li>Services: Acupuncture, physical therapy, preventive care</li>
+                    </ul>
+                </div>
+                <div class="contacts">
+                    <div class="contact-label">
+                        <img src="images/marker.webp"><h4>Summit Veterinary Hospital</h4>
+                    </div>
+                    <ul>
+                        <li>Address: 47 Summit Ave, Reno, NV 89501</li>
+                        <li>Phone: (555) 678-9012</li>
+                        <li>Email: <span class="email">info@summitvethospital.com</span></li>
+                        <li>Services: Emergency care, oncology, behavioral therapy</li>
+                    </ul>
+                </div>
+                <div class="contacts">
+                    <div class="contact-label">
+                        <img src="images/marker.webp"><h4>Willow Creek Animal Clinic</h4>
+                    </div>
+                    <ul>
+                        <li>Address: 255 Willow Creek Path, Austin, TX 78745</li>
+                        <li>Phone: (555) 789-0123</li>
+                        <li>Email: <span class="email">contact@willowcreekanimalclinic.com</span></li>
+                        <li>Services: Vaccinations, microchipping, senior pet care</li>
+                    </ul>
+                </div>
+                <div class="contacts">
+                    <div class="contact-label">
+                        <img src="images/marker.webp"><h4>Lakeside Veterinary Practice</h4>
+                    </div>
+                    <ul>
+                        <li>Address: 422 Lakeside Drive, Orlando, FL 32803</li>
+                        <li>Phone: (555) 890-1234</li>
+                        <li>Email: <span class="email">lakesidevet@lvpractice.com</span></li>
+                        <li>Services: Exotic pet care, dental care, spay and neuter services</li>
+                    </ul>
+                </div>
+                <div class="contacts">
+                    <div class="contact-label">
+                        <img src="images/marker.webp"> <h4>Mountain View Veterinary Clinic</h4>
+                    </div>
+                    <ul>
+                        <li>Address: 108 Mountain Road, Denver, CO 80205</li>
+                        <li>Phone: (555) 901-2345</li>
+                        <li>Email: <span class="email">mountainview@mvvetclinic.com</span></li>
+                        <li>Services: Emergency services, wellness exams, pet boarding</li>
+                    </ul>
+                </div>
+                <div class="contacts">
+                    <div class="contact-label">
+                        <img src="images/marker.webp"> <h4>Cityside Animal Hospital</h4>
+                    </div>  
+                    <ul>
+                        <li>Address: 670 Cityside Lane, New York, NY 10010</li>
+                        <li>Phone: (555) 012-3456</li>
+                        <li>Email: <span class="email">hello@citysideanimalhospital.com</span></li>
+                        <li>Services: Surgical services, preventive care, pet nutrition</li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+<script>
+    let subMenu = document.getElementById("subMenu");
+
+    function toggleMenu(){
+        subMenu.classList.toggle("open-menu");
+    }
+</script>
+    
+<script>
+    let menuIcon = document.querySelector(".menu-icon")
+    let sidebar = document.querySelector(".sidebar")
+
+    menuIcon.onclick = function(){
+        sidebar.classList.toggle("small-sidebar");
+        
+    }
+</script>
+
+</body>
+</html>

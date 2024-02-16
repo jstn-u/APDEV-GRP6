@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style-lost-found.css">
+</head>
+<body>
+<!-- header -->
+    <nav class="flex-div">
+        <div class="nav-left flex-div">
+            <img src="images/menu.png" class="menu-icon">
+            <img src="images/logo.png" class="logo">
+        </div>
+        <div class="nav-middle flex-div">
+            <div class="search-box flex-div">
+                <input type="text" placeholder="Search">
+                <img src="images/search.png">
+            </div>
+        </div>
+        <div class="nav-right flex-div">
+            <img src="images/plus.png">
+            <img src="images/bell.png">
+            <img src="images/profile-pic.png" class="user-icon" onclick="toggleMenu()">
+            <img src="images/dropdown.png" class="user-icon" onclick="toggleMenu()">
+        </div>     
+        
+    <!-- dropdown -->
+        <div class="sub-menu-wrap" id="subMenu">
+            <div class="sub-menu">
+                <div class="user-info">
+                    <img src="images/profile-pic.png">
+                    <h2>User Name</h2>
+                </div>
+            </div>
+        <a href="edit-profile.html" class="sub-menu-link">
+            <img src="images/user.png">
+            <p>Edit Profile</p>
+        </a>
+        <a href="#" class="sub-menu-link">
+            <img src="images/settings.png">
+            <p>Settings</p>
+        </a>
+        <a href="log-in.html" class="sub-menu-link">
+            <img src="images/exit.png">
+            <p>Log Out</p>
+        </a>
+        </div>
+        
+
+    </nav>
+
+<script>
+    let subMenu = document.getElementById("subMenu");
+
+    function toggleMenu(){
+        subMenu.classList.toggle("open-menu");
+    }
+</script>
+
+<div class="container">
+    <!-- left sidebar -->
+    <div class="sidebar">
+        <div class="shortcut-links">            
+            <a href="profile.html"><img src="images/profile.png"><p>Profile</p></a>
+            <a href="home.html"><img src="images/home.png"><p>Home</p></a>
+            <a href="lost-found.html"><img src="images/paw-heart.png"><p>Lost and Found</p></a>
+            <a href="foster-adoption.html"><img src="images/paw.png"><p>Adoption Library</p></a>
+            <a href=""><img src="images/address-book.png"><p>Emergency Contacts</p></a>
+            <hr>
+        </div>
+    </div>
+    <!-- middle section -->
+    <div class="main-content">
+        <div class="column">
+        <h2>Subforum: Lost and Found</h2>
+                <div class="black-box">
+                    <div class="straight-c">
+                        <div class="straight-r">
+                            <img src="images/profile-pic.png" class="profile-pic">
+                            <h4>ILuvGingerCats</h4>
+                        </div>
+                    <div class="textbox">
+                        <h6> Write something here... (please make sure it is related to lost or found pets only)</h6> 
+                    </div>
+                    <div class="post-button">
+                        <h5>POST</h5>
+                    </div>
+                    </div>
+                </div>
+
+            <!-- POST 1 -->
+
+            <div class ="post-box">
+                <div class="row">
+                    <img src="images/girl1.png" class="profile-pic2">
+                    <div class="left">
+                        <a href="post1.html" class="post-link">
+                            <h3>Anyone owns this huskey?</h3>
+                        </a>
+                        <h9>by Marianne C.</h9>
+                    </div>
+                    <div class="vote-icons">
+                        <img src="images/arrow-circle-up.png" class= "vote" alt="">
+                        <img src="images/arrow-circle-down.png" class= "vote" alt="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column1">
+                        <h8>Found this lost Husky in front of my house. Whoever owns this adorable furball message me ASAP!!!
+                            Owner you better reply to me soon OR ELSE I will really end up keeping him:> 
+                            I think I'll name him Snow
+                        </h8>
+                        <div class="row1">
+                            <img src="images/heart.png" class= "heart" alt="heart">
+                            <h10>30</h10>
+                            <img src="images/comment-dots.png" class= "comment" alt="comment">
+                            <h10>6</h10>
+                            <div class="tag"><h11>#lost</h11></div>
+                            <div class="tag"><h11>#dog</h11></div>
+                            <div class="tag"><h11>#huskey</h11></div>
+                        </div>
+                    </div>
+                    <img src="images/huskey.jpg" class= "post-pic" alt="huskey">
+                </div>  
+            </div>
+
+            <!-- POST 2 -->
+
+            <div class ="post-box">
+                <div class="row">
+                    <img src="images/catprofpic.jpg" class="profile-pic2">
+                    <div class="left">
+                        <a href="post2.html" class="post-link">
+                        <h3>FINALLY FOUND MY CAT THANKS GUYS</h3>
+                        </a>
+                        <h9>by CatLover</h9>
+                    </div>
+                    <div class="vote-icons">
+                        <img src="images/arrow-circle-up.png" class= "vote" alt="">
+                        <img src="images/arrow-circle-down.png" class= "vote" alt="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column1">
+                        <h8>No because I'm so thankful to this communinity. I thought I would never see my cat again 
+                            but you guys actually found Cinnamon for me! I'm so happy that I get to see my cat again. 
+                            Thank you so much guys I owe you guys the world
+                        </h8>
+                        <div class="row1">
+                            <img src="images/heart.png" class= "heart" alt="heart">
+                            <h10>121</h10>
+                            <img src="images/comment-dots.png" class= "comment" alt="comment">
+                            <h10>12</h10>
+                            <div class="tag"><h11>#found</h11></div>
+                            <div class="tag"><h11>#cat</h11></div>
+                            <div class="tag"><h11>#manx</h11></div>
+                        </div>
+                    </div>
+                    <img src="images/redcat.jpg" class= "post-pic" alt="huskey">
+                </div>  
+            </div>
+
+            <!-- POST 3 -->
+
+            <div class ="post-box">
+                <div class="row">
+                    <img src="images/guy1.png" class="profile-pic2">
+                    <div class="left">
+                        <a href="post3.html" class="post-link">
+                            <h3>HELP: Find Loud Chihuahua</h3>
+                        </a>
+                        <h9>by JustJake</h9>
+                    </div>
+                    <div class="vote-icons">
+                        <img src="images/arrow-circle-up.png" class= "vote" alt="">
+                        <img src="images/arrow-circle-down.png" class= "vote" alt="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column1">
+                        <h8>I lost my Chihuahua in BGC, he should be there somewhere.
+                            He is teacup sized and really LOUD (as in really loud). If you see a loud chihuahua barking that's probably mine.
+                            Please reply to this thread if you see him.
+                        </h8>
+                        <div class="row1">
+                            <img src="images/heart.png" class= "heart" alt="heart">
+                            <h10>317</h10>
+                            <img src="images/comment-dots.png" class= "comment" alt="comment">
+                            <h10>44</h10>
+                            <div class="tag"><h11>#lost</h11></div>
+                            <div class="tag"><h11>#dog</h11></div>
+                            <div class="tag"><h11>#chihuahua</h11></div>
+                        </div>
+                    </div>
+                    <img src="images/chihuahua.jpg" class= "post-pic" alt="huskey">
+                </div>  
+            </div>
+
+            <!-- POST 4 -->
+
+            <div class ="post-box">
+                <div class="row">
+                    <img src="images/girl2.png" class="profile-pic2">
+                    <div class="left">
+                        <h3>Finding a Black Dog with long hair</h3>
+                        <h9>by Danica Lee</h9>
+                    </div>
+                    <div class="vote-icons">
+                        <img src="images/arrow-circle-up.png" class= "vote" alt="">
+                        <img src="images/arrow-circle-down.png" class= "vote" alt="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column1">
+                        <h8>Finding for my black dog that ran away from home. Please reply if you saw her.
+                            She's kinda impossible to not spot because she sticks out like a sore thumb. Refer to the picture here.
+                            Message here as soon as you guys spot her.
+                        </h8>
+                        <div class="row1">
+                            <img src="images/heart.png" class= "heart" alt="heart">
+                            <h10>162</h10>
+                            <img src="images/comment-dots.png" class= "comment" alt="comment">
+                            <h10>29</h10>
+                            <div class="tag"><h11>#lost</h11></div>
+                            <div class="tag"><h11>#dog</h11></div>
+                            <div class="tag"><h11>#hariydog</h11></div>
+                        </div>
+                    </div>
+                    <img src="images/furdog.jpg" class= "post-pic" alt="huskey">
+                </div>  
+            </div>
+
+            <!-- POST 5 -->
+
+            <div class ="post-box">
+                <div class="row">
+                    <img src="images/cat1.jpg" class="profile-pic2">
+                    <div class="left">
+                        <h3>Mint has been returned!</h3>
+                        <h9>by PawPaw</h9>
+                    </div>
+                    <div class="vote-icons">
+                        <img src="images/arrow-circle-up.png" class= "vote" alt="">
+                        <img src="images/arrow-circle-down.png" class= "vote" alt="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column1">
+                        <h8>First of all thank you @koolkid for returning my cat back to me, but I don't
+                            appreciate that you kept him for 3 months before you gave my cat back. Still,
+                            thanks for finding my cat and for feeding him.
+                        </h8>
+                        <div class="row1">
+                            <img src="images/heart.png" class= "heart" alt="heart">
+                            <h10>288</h10>
+                            <img src="images/comment-dots.png" class= "comment" alt="comment">
+                            <h10>73</h10>
+                            <div class="tag"><h11>#found</h11></div>
+                            <div class="tag"><h11>#cat</h11></div>
+                            <div class="tag"><h11>#returned</h11></div>
+                        </div>
+                    </div>
+                    <img src="images/greycat.avif" class= "post-pic" alt="huskey">
+                </div>  
+            </div>
+        </div>
+    </div>
+</div>
+<!-- the right side -->
+<div class="right-box">
+ <div class="about-box">
+    <h4>ABOUT US</h4>
+    <h7>This is a sub-forum directory for the lost and found pets where users can
+        post about the pets they have lost or pets they have spotted around their neighbor-hood that
+        has not been found.
+    </h7>
+ </div>
+</div>
+    
+<script>
+    let menuIcon = document.querySelector(".menu-icon")
+    let sidebar = document.querySelector(".sidebar")
+
+    menuIcon.onclick = function(){
+        sidebar.classList.toggle("small-sidebar");
+        
+    }
+</script>
+
+</body>
+</html>
