@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="post2.css">
+</head>
+<body>
+<!-- header -->
+    <nav class="flex-div">
+        <div class="nav-left flex-div">
+            <img src="images/menu.png" class="menu-icon">
+            <img src="images/logo.png" class="logo">
+        </div>
+        <div class="nav-middle flex-div">
+            <div class="search-box flex-div">
+                <input type="text" placeholder="Search">
+                <img src="images/search.png">
+            </div>
+        </div>
+        <div class="nav-right flex-div">
+            <img src="images/plus.png">
+            <img src="images/bell.png">
+            <img src="images/profile-pic.png" class="user-icon" onclick="toggleMenu()">
+            <img src="images/dropdown.png" class="user-icon" onclick="toggleMenu()">
+        </div>     
+        
+    <!-- dropdown -->
+        <div class="sub-menu-wrap" id="subMenu">
+            <div class="sub-menu">
+                <div class="user-info">
+                    <img src="images/profile-pic.png">
+                    <h2>User Name</h2>
+                </div>
+            </div>
+        <a href="edit-profile.html" class="sub-menu-link">
+            <img src="images/user.png">
+            <p>Edit Profile</p>
+        </a>
+        <a href="#" class="sub-menu-link">
+            <img src="images/settings.png">
+            <p>Settings</p>
+        </a>
+        <a href="log-in.html" class="sub-menu-link">
+            <img src="images/exit.png">
+            <p>Log Out</p>
+        </a>
+        </div>
+        
+
+    </nav>
+
+<script>
+    let subMenu = document.getElementById("subMenu");
+
+    function toggleMenu(){
+        subMenu.classList.toggle("open-menu");
+    }
+</script>
+
+<div class="container">
+    <!-- left sidebar -->
+    <div class="sidebar">
+        <div class="shortcut-links">            
+            <a href="profile.html"><img src="images/profile.png"><p>Profile</p></a>
+            <a href="home.html"><img src="images/home.png"><p>Home</p></a>
+            <a href="lost-found.html"><img src="images/paw-heart.png"><p>Lost and Found</p></a>
+            <a href="foster-adoption.html"><img src="images/paw.png"><p>Adoption Library</p></a>
+            <a href=""><img src="images/address-book.png"><p>Emergency Contacts</p></a>
+            <hr>
+        </div>
+    </div>
+    
+    <!-- POST -->
+    <div class="main-content">
+        <div class="post-box">
+            <div class="row">
+                <img src="images/catprofpic.jpg" class="profile-pic2" alt="">
+                <div class="column-left">
+                    <h2>FINALLY FOUND MY CAT THANKS GUYS</h2>
+                    <h6>By: CatLover</h6>
+                </div>
+                <div class="vote-icons">
+                    <img src="images/arrow-circle-up.png" class= "vote" alt="">
+                    <img src="images/arrow-circle-down.png" class= "vote" alt="">
+                </div>
+            </div>
+            <div class="column-middle">
+                <img src="images/redcat.jpg" class="post-pic" alt="">
+                <div class="row">
+                    <img src="images/heart.png" class= "heart" alt="heart">
+                    <h10>121</h10>
+                    <img src="images/comment.png" class= "comment1" alt="comment">
+                    <h10>12</h10>
+                    <div class="tag"><h11>#found</h11></div>
+                    <div class="tag"><h11>#cat</h11></div>
+                    <div class="tag"><h11>#manx</h11></div>
+                </div>
+                <h8>No because I'm so thankful to this communinity. I thought I would never see my cat again 
+                    but you guys actually found Cinnamon for me! I'm so happy that I get to see my cat again. 
+                    Thank you so much guys I owe you guys the world
+                </h8>
+                <div class="dotted-line"></div>
+                <div class="comment-button">
+                    <h11>Add a Comment</h11>
+                </div>
+
+                <!-- Comment -->
+                <div class="column-left">
+                    <div class="row">
+                        <img src="images/girl1.png" class="profile-pic" alt="">
+                        <h3>Marianne C.</h3>
+                    </div>
+                    <h12>I'm so happy you found your cat! It's a good think they gave it back instead of keeping it lol</h12>
+                    <div class="row">
+                        <img src="images/arrow-circle-up.png" class= "vote1" alt="">
+                        <img src="images/arrow-circle-down.png" class= "vote1" alt="">
+                        <img src="images/comment.png" class= "comment" alt="comment">
+                        <h13>Reply</h13>
+                    </div>
+                </div>
+                <div class="solid-line"></div>
+
+                <!-- Comment 2 -->
+
+                <div class="column-left">
+                    <div class="row">
+                        <img src="images/funnydog.jpg" class="profile-pic" alt="">
+                        <h3>Xoxoxo</h3>
+                    </div>
+                    <h12>YOUR VERY MUCH WELCOME! I was actually tempted to keep it but I did the right thing. (Yes, I am the one who found the cat)</h12>
+                    <div class="row">
+                        <img src="images/arrow-circle-up.png" class="vote1" alt="">
+                        <img src="images/arrow-circle-down.png" class="vote1" alt="">
+                        <img src="images/comment.png" class="comment" alt="comment">
+                        <h13>Reply</h13>
+                    </div>
+                </div>
+                <div class="solid-line"></div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+    
+    
+<script>
+    let menuIcon = document.querySelector(".menu-icon")
+    let sidebar = document.querySelector(".sidebar")
+
+    menuIcon.onclick = function(){
+        sidebar.classList.toggle("small-sidebar");
+        
+    }
+</script>
+
+</body>
+</html>
