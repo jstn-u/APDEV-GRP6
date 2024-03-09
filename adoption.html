@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="style-home.css">
+    <title>Adoption Library</title>
+    <link rel="stylesheet" href="style-adoption.css">
 </head>
 <body>
 <!-- header -->
@@ -48,9 +48,9 @@
         <div class="sidebar">
             <div class="shortcut-links">            
                 <a href="profile.html"><img src="images/profile.png"><p>Profile</p></a>
-                <a href="home.html"><img src="images/home.png"><p class="highlight">Home</p></a>
+                <a href="home.html"><img src="images/home.png"><p>Home</p></a>
                 <a href="lost-found.html"><img src="images/paw-heart.png"><p>Lost and Found</p></a>
-                <a href="adoption.html"><img src="images/paw.png"><p>Adoption Library</p></a>
+                <a href="adoption.html"><img src="images/paw.png"><p class="highlight">Adoption Library</p></a>
                 <hr>
             </div>
             <!-- <div class="button-container">
@@ -66,7 +66,6 @@
             </div>  -->
         </div>
         <div class="main-content">
-            
             <div class="write-post-container">
                 <form action="#">
                     <div class="user-profile">
@@ -84,80 +83,109 @@
                     </div>
                     <div class="input-container">
                         <div class="input-text">
-                            <input type="text" placeholder="Add title" class="textarea"> 
+                            Title: <input type="text" class="textarea"> 
                          </div>
                         <div class="input-text">
-                           <input type="text" placeholder="What's on your mind?" class="textarea"> 
+                            Captions: <input type="text" class="textarea"> 
                         </div>
+                        <div class="input-text">
+                            Pet Name: <input type="text" class="textarea">
+                        </div>
+                        <div class="input-text">
+                            Species / Breed: <input type="text" class="textarea"> 
+                        </div>
+                        <div class="input-text">
+                            Location: <input type="text" class="textarea">                        
+                        </div>
+                        
                         <div class="add-post-links">
+                            <div class="input-text">
+                                Date of Birth: <input type="date">
+                            </div> 
                             <label for="photo-upload" class="custom-file-upload">
                                 <img src="images/add-image.png" alt="Upload photo"> Upload Photo</label>
-                            <input id="photo-upload" type="file" class="input-btn">                            
+                            <input id="photo-upload" type="file" class="input-btn">  
+                                                      
                         </div>
                          <button type="submit" class="post-btn"> post </button>
                     </div>
                 </form>                
             </div>
             <div class="post-container">
-                <div class="user-profile">
-                    <img src="images/profile-pic.png">
-                    <div>
-                        <p>title</p>
-                        <span>username</span> 
-                    </div>                    
-                </div>                
-                    <p class="caption">Found this lost Husky in front of my house. Whoever owns this adorable furball message me ASAP!!! Owner you better reply to me soon OR ELSE I will really end up keeping him:> I think I'll name him Snow</p>
-                    <!-- <div class="button-container">
-                        <button>Videos</button>
-                        <button>Meaning</button>
-                        <button>Images</button>
-                        <button>Shopping</button>
-                        <button>News</button>
-                        <button>Maps</button>
-                        <button>Books</button>
-                        <button>Flights</button>
-                        <button>Finance</button>
-                    </div> -->
-                    <img src="images/post-image.jpg" class="post-img">
-
-                <div class="reacts-container">                                         
-                    <div class="like-button">                        
-                        <div class="heart-icon"></div>
-                    </div>
-                    <button  class="view-comments">
-                        <img src="images/comment-dots.png">
-                    </button>                    
-                </div>
-                <div class="like-button">                        
-                    <div class="likes-amount">7</div>
-                    <div class="likes-text">likes</div>
-                </div>
-                <div>
-                    <input type="text" placeholder="Add a comment..." class="add-comment">                
-                </div>
-                <div class="comment-section">
-                        <div class="user-profile-comments">
-                            <img src="images/profile-pic.png">                            
-                            <p>username</p>     
-                        </div>
-                        <div class="comment">
-                            <small>Wow handsome and pretty 😍</small>
-                        </div>
-                        <div class="comments-actions">
-                            <div class="like-comment-btn">
-                                <div class="like-comment-icon"><img src="images/heart.png" class="heart-comment-icon"></div>
-                                <div class="likes-comment-amount">0</div>
-                                <div class="likes-comment-text">likes</div>
+                <div class="post-top">                                            
+                    <div class="pet-profile">
+                        <img src="images/cow.jpg" class="pet-profile-img">
+                        <div class="pet-info">
+                            <div class="name">
+                                <small>Name: </small> <div class="pet-name">CoWoo</div>
+                            </div>                        
+                            <span><hr></span>
+                            <div class="birth">
+                                <small>Date of Birth: </small> <div class="birthdate">12/28/2003</div>
                             </div>
-                            
-                            <button class="reply-btn">reply</button>
-                            <button class="menu-dots-btn"><img src="images/menu-dots.png"></button>
-                        </div> 
-                        <div class="reply-comment">
+                            <div class="breed"> 
+                                <small>Species/Breed: </small> <div class="pet-type">cow</div>
+                            </div>
+                            <div class="loc"> 
+                                <small>Location: </small> <div class="location">omooshu</div>
+                            </div>
+                            <div class="date-posted">
+                                <small>Date Posted: </small> <div class="date">09/03/2024</div>
+                            </div>
+                        </div>                
+                    </div>
+                    <div class="captions-col">                
+                        <div class="user-profile">
+                            <img src="images/profile-pic.png">
+                            <div>
+                                <p>title</p>
+                                <span>username</span> 
+                            </div>  
+                            <hr>                  
+                        </div>
+                        <div class="captions">
+                            Meet [Cow's Name], a gentle and loving bovine friend ready to find a forever pasture! With a heart as big as their moo, [Cow's Name] is a [age]-year-old [breed] cow with a unique personality that shines brighter than the morning sun on a dewy meadow. This adorable cow enjoys leisurely grazing, peaceful afternoons under the shade of a big oak tree, and the occasional scratch behind the ears. [Cow's Name] is not just a cow, but a companion who appreciates the simple joys of farm life. Whether you're a seasoned farmer or someone with a sizable piece of land looking for a gentle giant to add to your family, [Cow's Name] could be the perfect match. They are up-to-date on all vaccinations, health checks, and come with a health guarantee to ensure they're ready to seamlessly join their new home. Adopting a cow is a rewarding experience that brings a lot of joy and a bit of fun moo-sic into your life. If you're ready to welcome [Cow's Name] into your heart and home, please contact us for more information on how you can adopt this lovable cow. Let's give [Cow's Name] the loving forever home they deserve!
+                        </div>
+                        <div class="reacts-container">                                         
+                            <div class="like-button">                        
+                                <div class="heart-icon"></div>
+                                <div class="likes-amount">7</div>
+                            <div class="likes-text">likes</div>
+                            </div>
+                            <button  class="view-comments">
+                                <img src="images/comment-dots.png">
+                            </button>                    
+                        </div>
+                        <div>
                             <input type="text" placeholder="Add a comment..." class="add-comment">                
-                        </div>                                   
-                </div>
-            </div>
+                        </div>
+                        <div class="comment-section">
+                                <div class="user-profile-comments">
+                                    <img src="images/profile-pic.png">                            
+                                    <p>username</p>     
+                                </div>
+                                <div class="comment">
+                                    <small>Wow handsome and pretty 😍</small>
+                                </div>
+                                <div class="comments-actions">
+                                    <div class="like-comment-btn">
+                                        <div class="like-comment-icon"><img src="images/heart.png" class="heart-comment-icon"></div>
+                                        <div class="likes-comment-amount">0</div>
+                                        <div class="likes-comment-text">likes</div>
+                                    </div>
+                                    
+                                    <button class="reply-btn">reply</button>
+                                    <button class="menu-dots-btn"><img src="images/menu-dots.png"></button>
+                                </div> 
+                                <div class="reply-comment">
+                                    <input type="text" placeholder="Add a comment..." class="add-reply">                
+                                </div>                                   
+                        </div>              
+                    </div>
+                    
+                </div>  
+                
+            </div>    
         </div>
         
         
@@ -365,5 +393,6 @@
 });
 
 </script>
+
 </body>
 </html>
