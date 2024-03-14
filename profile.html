@@ -15,9 +15,8 @@
                 <div class="shortcut-links">            
                     <a href="profile.html"><img src="images/profile.png"></a>
                     <a href="home.html"><img src="images/home.png"></a>
-                    <a href=""><img src="images/paw-heart.png"></a>
-                    <a href=""><img src="images/paw.png"></a>
-                    <a href=""><img src="images/address-book.png"></a>
+                    <a href="lost-found.html"><img src="images/paw-heart.png"></a>
+                    <a href="adoption.html"><img src="images/paw.png"></a>
                     <span class="line"></span> 
                 </div>
             </div>
@@ -30,9 +29,7 @@
                 <img src="images/search.png">
             </div>
         </div>
-        <div class="nav-right flex-div">
-            <img src="images/plus.png">
-            <img src="images/bell.png">
+        <div class="nav-right flex-div">            
             <img src="images/profile-pic.png" class="user-icon" onclick="toggleMenu()">
             <img src="images/dropdown.png" class="user-icon" onclick="toggleMenu()">
         </div>     
@@ -42,16 +39,12 @@
             <div class="sub-menu">
                 <div class="user-info">
                     <img src="images/profile-pic.png">
-                    <h2>User Name</h2>
+                    <h2>username</h2>
                 </div>
             </div>
         <a href="edit-profile.html" class="sub-menu-link">
             <img src="images/profile.png">
             <p>Edit Profile</p>
-        </a>
-        <a href="#" class="sub-menu-link">
-            <img src="images/settings.png">
-            <p>Settings</p>
         </a>
         <a href="log-in.html" class="sub-menu-link">
             <img src="images/exit.png">
@@ -69,40 +62,163 @@
 </script>
     
 <!-- profile page middle content -->
-<div class="profile-container">
-    <img src="images/banner.png" class="cover-img">
-    <div class="profile-details">
-        <div class="pd-left">
-            <div class="pd-row">
-                <img src="images/profile-pic.png" class="pd-image">
-                <div>
-                    <h3>username</h3>
-                    <p>"Digital Nomad & Espresso Enthusiast 🌍✈️ | Tech Innovator 💡| Aspiring Polyglot 📚| Part-time Poet 🖋️| Full-time Dreamer 💭| Lover of the stars and everything in between 🌌| Seeking the magic in the mundane | Let's make the impossible, possible together 🚀"</p>
+    <div class="profile-top"> 
+        <div class="profile-container1">        
+            <img src="images/banner.png" class="cover-img">
+            <div class="profile-details">
+                <div class="pd-left">
+                    <div class="pd-row">
+                        <img src="images/profile-pic.png" class="pd-image">
+                        <div>
+                            <h3>username</h3>
+                            <p>"Digital Nomad & Espresso Enthusiast 🌍✈️ | Tech Innovator 💡| Aspiring Polyglot 📚| Part-time Poet 🖋️| Full-time Dreamer 💭| Lover of the stars and everything in between 🌌| Seeking the magic in the mundane | Let's make the impossible, possible together 🚀"</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="pd-right">
+                    <a href="edit-profile.html"><button type="button"><img src="images/pencil.png"> Edit Profile</button></a>
+                </div>
+            </div>
+        </div> 
+    </div>  
+        <div class="profile-container2">   
+            <div class="profile-info">
+                <div class="info-col">
+                    <div class="profile-intro">
+                        <!-- link to database -->
+                        <h3>Intro</h3>
+                        <div class="info">
+                            <img src="images/calendar.png" class="info-icon">
+                            <p>Birthday:</p>
+                        </div>
+                            
+                        <div class="info">
+                            <img src="images/phone-call.png" class="info-icon">
+                            <p>Phone:</p>
+                        </div>         
+                        <div class="info">
+                            <img src="images/mail.png" class="info-icon">
+                            <p>Mail:</p>
+                        </div>         
+                        <div class="info">
+                            <img src="images/marker.png" class="info-icon">
+                            <p>Location:</p>
+                        </div>         
+                        
+                    </div>
+                </div>
+                <div class="post-col">
+                    <div class="main-content">
+            
+                        <div class="write-post-container">
+                            <form action="#">
+                                <div class="user-profile">
+                                    <img src="images/profile-pic.png" class="user-img">
+                                    <div>
+                                        <p>User Name</p> 
+                                        <div class="visibility-container">
+                                            <select class="visibility">
+                                              <option value="public">Public</option>
+                                              <option value="friends">Friends Only</option>
+                                              <option value="private">Only Me</option>
+                                            </select>
+                                          </div>
+                                    </div>
+                                </div>
+                                <div class="input-container">
+                                    <div class="input-text">
+                                        <input type="text" placeholder="Add title" class="textarea"> 
+                                     </div>
+                                    <div class="input-text">
+                                       <input type="text" placeholder="What's on your mind?" class="textarea"> 
+                                    </div>
+                                    <div class="add-post-links">
+                                        <label for="photo-upload" class="custom-file-upload">
+                                            <img src="images/add-image.png" alt="Upload photo"> Upload Photo</label>
+                                        <input id="photo-upload" type="file" class="input-btn">                            
+                                    </div>
+                                     <button type="submit" class="post-btn"> post </button>
+                                </div>
+                            </form>                
+                        </div>
+                        <div class="post-container">
+                            <div class="user-profile">
+                                <img src="images/profile-pic.png" class="user-img">
+                                <div>
+                                    <p>title</p>
+                                    <span>username</span>                                     
+                                </div>      
+                                <div class="btn-container">
+                                    <button class="edit-btn">edit</button>
+                                    <button class="delete-btn">delete</button>     
+                                </div>
+                                
+                            </div>    
+  
+                            <div>
+                                <p class="caption">Found this lost Husky in front of my house. Whoever owns this adorable furball message me ASAP!!! Owner you better reply to me soon OR ELSE I will really end up keeping him:> I think I'll name him Snow</p>
+                            </div>            
+                                <!-- <div class="button-container">
+                                    <button>Videos</button>
+                                    <button>Meaning</button>
+                                    <button>Images</button>
+                                    <button>Shopping</button>
+                                    <button>News</button>
+                                    <button>Maps</button>
+                                    <button>Books</button>
+                                    <button>Flights</button>
+                                    <button>Finance</button>
+                                </div> -->
+                                <img src="images/post-image.jpg" class="post-img">
+            
+                            <div class="reacts-container">                                         
+                                <div class="like-button">                        
+                                    <div class="heart-icon"></div>
+                                </div>
+                                <button  class="view-comments">
+                                    <img src="images/comment-dots.png">
+                                </button>                    
+                            </div>
+                            <div class="like-button">                        
+                                <div class="likes-amount">7</div>
+                                <div class="likes-text">likes</div>
+                            </div>
+                            <div>
+                                <input type="text" placeholder="Add a comment..." class="add-comment">                
+                                <button class="post-comment-btn">Post</button>
+            
+                            </div>
+                            <div class="comment-section">
+                                    <div class="user-profile-comments">
+                                        <img src="images/profile-pic.png">                            
+                                        <p>username</p>     
+                                    </div>
+                                    <div class="comment">
+                                        <small>Wow handsome and pretty 😍</small>
+                                    </div>
+                                    <div class="comments-actions">
+                                        <div class="like-comment-btn">
+                                            <div class="like-comment-icon"><img src="images/heart.png" class="heart-comment-icon"></div>
+                                            <div class="likes-comment-amount">0</div>
+                                            <div class="likes-comment-text">likes</div>                                            
+                                        </div>
+                                        <button class="reply-btn">reply</button>
+                                        <button class="edit-comment-btn">edit</button>
+                                        <button class="delete-comment-btn">delete</button>
+                                        
+                                    </div>
+                                    <div class="reply-comment">
+                                        <input type="text" placeholder="Add a reply..." class="add-comment">                
+                                        <button class="post-reply-btn">Post</button>
+                                    </div>                                   
+                            </div>                                  
+                            </div>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
         </div>
-        <div class="pd-right">
-            <a href="edit-profile.html"><button type="button"><img src="images/pencil.png"> Edit Profile</button></a>
-        </div>
-    </div>
-    <div class="profile-info">
-        <div class="info-col">
-            <div class="profile-intro">
-                <h3>Intro</h3>
-                <hr>
-                <h4>Info</h4>
-                <p>Birthday: </p>
-                <p>Phone: </p>
-                <h4>Social Links</h4>
-                <p>Twitter:</p>
-                <p>Facebook</p>
-                <p>Instagram</p>
-            </div>
-        </div>
-        <div class="post-col">
-            <img src="images/mock.jpg">
-        </div>
-    </div>
 </div>
 
 <script>
@@ -112,6 +228,120 @@
     menuIcon.onclick = function(){
         sidebar.classList.toggle("small-sidebar");        
     }
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const viewCommentsButton = document.querySelector('.view-comments');
+        const commentSection = document.querySelector('.comment-section');
+
+        viewCommentsButton.addEventListener('click', function() {
+            commentSection.classList.toggle('show');
+        });
+    });
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const replyButtons = document.querySelectorAll('.reply-btn');
+        
+        replyButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const replySection = this.parentElement.nextElementSibling;
+                replySection.style.display = replySection.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    });
+    </script>
+    
+
+</script>
+
+<script>
+    const heartIcon = document.querySelector(".like-button .heart-icon");
+    const likesAmountLabel = document.querySelector(".like-button .likes-amount");
+
+    let likesAmount = 7;
+    heartIcon.addEventListener("click", () => {
+        heartIcon.classList.toggle("liked");
+        if (heartIcon.classList.contains("liked")) {
+            likesAmount++;
+        } else {
+            likesAmount--;
+        }
+
+        likesAmountLabel.innerHTML = likesAmount;
+    })
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    const likeBtn = document.querySelector('.like-comment-icon');
+    let isLiked = false;
+    let likeCount = parseInt(document.querySelector('.likes-comment-amount').innerText);
+
+    likeBtn.addEventListener('click', function() {
+        isLiked = !isLiked; // Toggle like state
+        likeCount = isLiked ? likeCount + 1 : likeCount - 1;
+        document.querySelector('.likes-comment-amount').innerText = likeCount;
+
+        const heartIcon = document.querySelector('.heart-comment-icon');
+        heartIcon.src = isLiked ? "images/heart-filled.png" : "images/heart.png";
+    });
+});
+
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Edit post functionality
+        document.querySelectorAll('.edit-btn').forEach(function(button) {
+            button.addEventListener('click', function() {
+                let parentPostContainer = this.closest('.post-container');
+                let captionElement = parentPostContainer.querySelector('.caption');
+                let postImage = parentPostContainer.querySelector('.post-img');
+                
+                let newCaption = prompt("Edit your caption:", captionElement.innerText);
+                if (newCaption !== null) captionElement.innerText = newCaption;
+                
+                let newImageUrl = prompt("Change the image URL (leave blank to keep current image):", postImage.src);
+                if (newImageUrl !== null && newImageUrl !== '') postImage.src = newImageUrl;
+            });
+        });
+    
+        // Delete post functionality
+        document.querySelectorAll('.delete-btn').forEach(function(button) {
+            button.addEventListener('click', function() {
+                if (confirm("Are you sure you want to delete this post?")) {
+                    this.closest('.post-container').remove();
+                }
+            });
+        });
+    });
+</script>
+    
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // edit comment functionality
+        document.querySelectorAll('.edit-comment-btn').forEach(function(button) {
+            button.addEventListener('click', function() {
+                let commentTextElement = this.closest('.comment-section').querySelector('.comment small');
+                let newText = prompt('Edit your comment:', commentTextElement.textContent);
+                if (newText !== null) { // Check if the user pressed cancel
+                    commentTextElement.textContent = newText;
+                }
+            });
+        });
+    
+        //delete comment functionality
+        document.querySelectorAll('.delete-comment-btn').forEach(function(button) {
+            button.addEventListener('click', function() {
+                if (confirm('Are you sure you want to delete this comment?')) {
+                    this.closest('.comment-section').remove();
+                }
+            });
+        });
+    });
 </script>
 
 </body>
