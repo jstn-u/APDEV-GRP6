@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adoption Library</title>
+    <link rel="stylesheet" href="style-foster-adoption.css">
+</head>
+<body>
+<!-- header -->
+    <nav class="flex-div">
+        <div class="nav-left flex-div">
+            <img src="images/menu.png" class="menu-icon">
+            <img src="images/logo.png" class="logo">
+        </div>
+        <div class="nav-middle flex-div">
+            <div class="search-box flex-div">
+                <input type="text" placeholder="Search">
+                <img src="images/search.png">
+            </div>
+        </div>
+        <div class="nav-right flex-div">            
+            <img src="images/profile-pic.png" class="user-icon" onclick="toggleMenu()">
+            <img src="images/dropdown.png" class="user-icon" onclick="toggleMenu()">
+        </div>     
+        
+    <!-- dropdown -->
+        <div class="sub-menu-wrap" id="subMenu">
+            <div class="sub-menu">
+                <div class="user-info">
+                    <img src="images/profile-pic.png">
+                    <h2>User Name</h2>
+                </div>
+            </div>
+        <a href="/editprofile" class="sub-menu-link">
+            <img src="images/user.png">
+            <p>Edit Profile</p>
+        </a>
+        <a href="/login" class="sub-menu-link">
+            <img src="images/exit.png">
+            <p>Log Out</p>
+        </a>
+    </div>
+</nav>
+
+    <div class="container">
+        <!-- left sidebar -->
+        <div class="sidebar">
+            <div class="shortcut-links">            
+                <a href="/profile"><img src="images/profile.png"><p>Profile</p></a>
+                <a href="/home"><img src="images/home.png"><p>Home</p></a>
+                <a href="/lost"><img src="images/paw-heart.png"><p>Lost and Found</p></a>
+                <a href="/adopt"><img src="images/paw.png"><p class="highlight">Adoption Library</p></a>
+                <hr>
+            </div>
+            <!-- <div class="button-container">
+                <button>Videos</button>
+                <button>Meaning</button>
+                <button>Images</button>
+                <button>Shopping</button>
+                <button>News</button>
+                <button>Maps</button>
+                <button>Books</button>
+                <button>Flights</button>
+                <button>Finance</button>
+            </div>  -->
+        </div>
+        <div class="main-content">
+            <div class="write-post-container">
+                <form action="#">
+                    <div class="user-profile">
+                        <img src="images/profile-pic.png">
+                        <div>
+                            <p>User Name</p> 
+                            <div class="visibility-container">
+                                <select class="visibility">
+                                  <option value="public">Public</option>
+                                  <option value="friends">Friends Only</option>
+                                  <option value="private">Only Me</option>
+                                </select>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="input-container">
+                        <div class="input-text">
+                            Title: <input type="text" class="textarea"> 
+                         </div>
+                        <div class="input-text">
+                            Captions: <input type="text" class="textarea"> 
+                        </div>
+                        <div class="input-text">
+                            Pet Name: <input type="text" class="textarea">
+                        </div>
+                        <div class="input-text">
+                            Species / Breed: <input type="text" class="textarea"> 
+                        </div>
+                        <div class="input-text">
+                            Location: <input type="text" class="textarea">                        
+                        </div>
+                        
+                        <div class="add-post-links">
+                            <div class="input-text">
+                                Date of Birth: <input type="date">
+                            </div> 
+                            <label for="photo-upload" class="custom-file-upload">
+                                <img src="images/add-image.png" alt="Upload photo"> Upload Photo</label>
+                            <input id="photo-upload" type="file" class="input-btn">  
+                                                      
+                        </div>
+                         <button type="submit" class="post-btn"> post </button>
+                    </div>
+                </form>                
+            </div>
+            <div class="post-container">
+                <div class="post-top">                                            
+                    <div class="pet-profile">
+                        <img src="images/cow.jpg" class="pet-profile-img">
+                        <div class="pet-info">
+                            <div class="name">
+                                <small>Name: </small> <div class="pet-name">CoWoo</div>
+                            </div>                        
+                            <span><hr></span>
+                            <div class="birth">
+                                <small>Date of Birth: </small> <div class="birthdate">12/28/2003</div>
+                            </div>
+                            <div class="breed"> 
+                                <small>Species/Breed: </small> <div class="pet-type">cow</div>
+                            </div>
+                            <div class="loc"> 
+                                <small>Location: </small> <div class="location">omooshu</div>
+                            </div>
+                            <div class="date-posted">
+                                <small>Date Posted: </small> <div class="date">09/03/2024</div>
+                            </div>
+                        </div>                
+                    </div>
+                    <div class="captions-col">                
+                        <div class="user-profile">
+                            <img src="images/profile-pic.png">
+                            <div>
+                                <p>title</p>
+                                <span>username</span> 
+                            </div>  
+                            <hr>                  
+                        </div>
+                        <div class="captions">
+                            Meet [Cow's Name], a gentle and loving bovine friend ready to find a forever pasture! With a heart as big as their moo, [Cow's Name] is a [age]-year-old [breed] cow with a unique personality that shines brighter than the morning sun on a dewy meadow. This adorable cow enjoys leisurely grazing, peaceful afternoons under the shade of a big oak tree, and the occasional scratch behind the ears. [Cow's Name] is not just a cow, but a companion who appreciates the simple joys of farm life. Whether you're a seasoned farmer or someone with a sizable piece of land looking for a gentle giant to add to your family, [Cow's Name] could be the perfect match. They are up-to-date on all vaccinations, health checks, and come with a health guarantee to ensure they're ready to seamlessly join their new home. Adopting a cow is a rewarding experience that brings a lot of joy and a bit of fun moo-sic into your life. If you're ready to welcome [Cow's Name] into your heart and home, please contact us for more information on how you can adopt this lovable cow. Let's give [Cow's Name] the loving forever home they deserve!
+                        </div>
+                        <div class="reacts-container">                                         
+                            <div class="like-button">                        
+                                <div class="heart-icon"></div>
+                                <div class="likes-amount">7</div>
+                            <div class="likes-text">likes</div>
+                            </div>
+                            <button  class="view-comments">
+                                <img src="images/comment-dots.png">
+                            </button>                    
+                        </div>
+                        <div>
+                            <input type="text" placeholder="Add a comment..." class="add-comment">                
+                            <button class="post-comment-btn">Post</button>
+        
+                        </div>
+                        <div class="comment-section">
+                                <div class="user-profile-comments">
+                                    <img src="images/profile-pic.png">                            
+                                    <p>username</p>     
+                                </div>
+                                <div class="comment">
+                                    <small>Wow handsome and pretty 😍</small>
+                                </div>
+                                <div class="comments-actions">
+                                    <div class="like-comment-btn">
+                                        <div class="like-comment-icon"><img src="images/heart.png" class="heart-comment-icon"></div>
+                                        <div class="likes-comment-amount">0</div>
+                                        <div class="likes-comment-text">likes</div>
+                                    </div>
+                                    
+                                    <button class="reply-btn">reply</button>
+                                    <button class="edit-btn">edit</button>
+                                    <button class="delete-btn">delete</button>
+                                </div>
+                                <div class="reply-comment">
+                                    <input type="text" placeholder="Add a reply..." class="add-comment">                
+                                    <button class="post-reply-btn">Post</button>
+                                </div>                                   
+                        </div>              
+                    </div>
+                    
+                </div>  
+                
+            </div>    
+        </div>
+        
+        
+        <div class="right-sidebar">
+            <div class="right-title">
+                <img src="images/address-book.png">
+                <h2>Emergency Contacts</h2>
+            </div>
+            <hr>
+            <div class="right-info">
+                <div class="contacts">
+                    <div class="contact-label">
+                        <img src="images/marker.png"><h4>Sunnydale Veterinary Clinic</h4>
+                    </div>
+                    <ul>
+                        <li>Address: 124 Oak Street, Sunnydale, CA 94086</li>
+                        <li>Phone: (555) 123-4567</li>
+                        <li>Email: <span class="email">info@sunnydalevet.com</span></li>
+                        <li>Services: General checkups, vaccinations, emergency services</li>
+                    </ul>
+                </div>
+                <div class="contacts">
+                    <div class="contact-label">
+                        <img src="images/marker.png"><h4>Riverbank Animal Hospital</h4>
+                    </div>
+                    <ul>
+                        <li>Address: 782 River Road, Springfield, IL 62704</li>
+                        <li>Phone: (555) 234-5678</li>
+                        <li>Email: <span class="email">contact@riverbankanimalhospital.com</span></li>
+                        <li>Services: Surgery, dental care, wellness exams</li>
+                    </ul>
+                </div>
+                <div class="contacts">
+                    <div class="contact-label">
+                        <img src="images/marker.png"><h4>Greenfield Pet Clinic</h4>
+                    </div>
+                    <ul>
+                        <li>Address: 339 Green Street, Greenfield, IN 46140</li>
+                        <li>Phone: (555) 345-6789</li>
+                        <li>Email: <span class="email">support@greenfieldpetclinic.com</span></li>
+                        <li>Services: Diagnostic services, nutrition counseling, pharmacy</li>
+                    </ul>
+                </div>
+                <div class="contacts">
+                    <div class="contact-label">
+                        <img src="images/marker.png"><h4>Harborview Veterinary Services</h4>
+                    </div>
+                    <ul>
+                        <li>Address: 560 Harborview Blvd, Miami, FL 33131</li>
+                        <li>Phone: (555) 456-7890</li>
+                        <li>Email: <span class="email">appointments@harborviewvet.com</span></li>
+                        <li>Services: Orthopedic surgery, dermatology, cardiology</li>
+                    </ul>
+                </div>
+                <div class="contacts">
+                    <div class="contact-label">
+                        <img src="images/marker.png"><h4>Pine Ridge Veterinary Clinic</h4>
+                    </div>
+                    <ul>
+                        <li>Address: 890 Pine Ridge Road, Boulder, CO 80302</li>
+                        <li>Phone: (555) 567-8901</li>
+                        <li>Email: <span class="email">pinevet@pineridgeclinic.com</span></li>
+                        <li>Services: Acupuncture, physical therapy, preventive care</li>
+                    </ul>
+                </div>
+                <div class="contacts">
+                    <div class="contact-label">
+                        <img src="images/marker.png"><h4>Summit Veterinary Hospital</h4>
+                    </div>
+                    <ul>
+                        <li>Address: 47 Summit Ave, Reno, NV 89501</li>
+                        <li>Phone: (555) 678-9012</li>
+                        <li>Email: <span class="email">info@summitvethospital.com</span></li>
+                        <li>Services: Emergency care, oncology, behavioral therapy</li>
+                    </ul>
+                </div>
+                <div class="contacts">
+                    <div class="contact-label">
+                        <img src="images/marker.png"><h4>Willow Creek Animal Clinic</h4>
+                    </div>
+                    <ul>
+                        <li>Address: 255 Willow Creek Path, Austin, TX 78745</li>
+                        <li>Phone: (555) 789-0123</li>
+                        <li>Email: <span class="email">contact@willowcreekanimalclinic.com</span></li>
+                        <li>Services: Vaccinations, microchipping, senior pet care</li>
+                    </ul>
+                </div>
+                <div class="contacts">
+                    <div class="contact-label">
+                        <img src="images/marker.png"><h4>Lakeside Veterinary Practice</h4>
+                    </div>
+                    <ul>
+                        <li>Address: 422 Lakeside Drive, Orlando, FL 32803</li>
+                        <li>Phone: (555) 890-1234</li>
+                        <li>Email: <span class="email">lakesidevet@lvpractice.com</span></li>
+                        <li>Services: Exotic pet care, dental care, spay and neuter services</li>
+                    </ul>
+                </div>
+                <div class="contacts">
+                    <div class="contact-label">
+                        <img src="images/marker.png"> <h4>Mountain View Veterinary Clinic</h4>
+                    </div>
+                    <ul>
+                        <li>Address: 108 Mountain Road, Denver, CO 80205</li>
+                        <li>Phone: (555) 901-2345</li>
+                        <li>Email: <span class="email">mountainview@mvvetclinic.com</span></li>
+                        <li>Services: Emergency services, wellness exams, pet boarding</li>
+                    </ul>
+                </div>
+                <div class="contacts">
+                    <div class="contact-label">
+                        <img src="images/marker.png"> <h4>Cityside Animal Hospital</h4>
+                    </div>  
+                    <ul>
+                        <li>Address: 670 Cityside Lane, New York, NY 10010</li>
+                        <li>Phone: (555) 012-3456</li>
+                        <li>Email: <span class="email">hello@citysideanimalhospital.com</span></li>
+                        <li>Services: Surgical services, preventive care, pet nutrition</li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+<script>
+    let subMenu = document.getElementById("subMenu");
+
+    function toggleMenu(){
+        subMenu.classList.toggle("open-menu");
+    }
+</script>
+    
+<script>
+    let menuIcon = document.querySelector(".menu-icon")
+    let sidebar = document.querySelector(".sidebar")
+
+    menuIcon.onclick = function(){
+        sidebar.classList.toggle("small-sidebar");
+        
+    }
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const viewCommentsButton = document.querySelector('.view-comments');
+        const commentSection = document.querySelector('.comment-section');
+
+        viewCommentsButton.addEventListener('click', function() {
+            commentSection.classList.toggle('show');
+        });
+    });
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const replyButtons = document.querySelectorAll('.reply-btn');
+        
+        replyButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const replySection = this.parentElement.nextElementSibling;
+                replySection.style.display = replySection.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    });  
+
+</script>
+
+<script>
+    const heartIcon = document.querySelector(".like-button .heart-icon");
+    const likesAmountLabel = document.querySelector(".like-button .likes-amount");
+
+    let likesAmount = 7;
+    heartIcon.addEventListener("click", () => {
+        heartIcon.classList.toggle("liked");
+        if (heartIcon.classList.contains("liked")) {
+            likesAmount++;
+        } else {
+            likesAmount--;
+        }
+
+        likesAmountLabel.innerHTML = likesAmount;
+    })
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    const likeBtn = document.querySelector('.like-comment-icon');
+    let isLiked = false;
+    let likeCount = parseInt(document.querySelector('.likes-comment-amount').innerText);
+
+    likeBtn.addEventListener('click', function() {
+        isLiked = !isLiked; // Toggle like state
+        likeCount = isLiked ? likeCount + 1 : likeCount - 1;
+        document.querySelector('.likes-comment-amount').innerText = likeCount;
+
+        // Optionally, toggle heart icon to indicate like/unlike visually
+        // This assumes you have "heart-filled.png" as the liked state icon
+        const heartIcon = document.querySelector('.heart-comment-icon');
+        heartIcon.src = isLiked ? "images/heart-filled.png" : "images/heart.png";
+    });
+});
+
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // edit comment functionality
+        document.querySelectorAll('.edit-btn').forEach(function(button) {
+            button.addEventListener('click', function() {
+                let commentTextElement = this.closest('.comment-section').querySelector('.comment small');
+                let newText = prompt('Edit your comment:', commentTextElement.textContent);
+                if (newText !== null) { // Check if the user pressed cancel
+                    commentTextElement.textContent = newText;
+                }
+            });
+        });
+    
+        //delete comment functionality
+        document.querySelectorAll('.delete-btn').forEach(function(button) {
+            button.addEventListener('click', function() {
+                if (confirm('Are you sure you want to delete this comment?')) {
+                    this.closest('.comment-section').remove();
+                }
+            });
+        });
+    });
+</script>
+</body>
+</html>

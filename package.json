@@ -1,0 +1,22 @@
+{
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "ejs": "^3.1.9",
+    "express": "^4.18.3",
+    "express-handlebars": "^7.1.2",
+    "hbs": "^4.2.0",
+    "mongoose": "^8.2.1",
+    "nodejs": "^0.0.0",
+    "nodemon": "^3.1.0"
+  },
+  "name": "apdev-grp6-newest",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "Please Also Download this folder; Cant put it in git because its too many files daw"
+}
