@@ -3,28 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, resizable=no">
-    <title>Pawfect Companions</title>
+    <title>Log In</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="image-card-wrapper">        
-        <img src="images/app-logo.png" class="app-logo">
-            <div class="content">
-                <div class="heading">Pawfect Companions</div>
-                <div class="stars">
-                    <img src="images/star.png">
-                    <img src="images/star.png">
-                    <img src="images/star.png">
-                    <img src="images/star.png">
-                    <img src="images/star-sharp-half-stroke.png">
-                    <span>4.5(228)</span>
-                </div>                
+    
+    <div class="wrapper">
+        <form action="home.html">
+            <h1>Log In</h1>
+            <div class="input-box">
+                <input type="text" placeholder="Username" required>
+                <img src="images/user.png" class="user-icon">
             </div>
-        </div>
-        
-        <div class="dl-button">
-            <a href="log-in.html"><img src="images/angle-small-right.png" class="arrow-btn"></a>
-        </div>
+            <div class="input-box">
+                <input type="password" placeholder="Password" required id="password">
+                <img src="images/eye.png" id="eyeicon" class="show-icon">
+            </div>
+
+            <script>
+                let eyeicon = document.getElementById("eyeicon");
+                let password = document.getElementById("password");
+
+                eyeicon.onclick = function(){
+                    if(password.type == "password"){
+                        password.type = "text";
+                    }else{
+                        password.type = "password";
+                    }
+                }
+            </script>
+
+            <button type="submit" class="btn">Log In</button>          
+
+            <div class="register-link">
+                <p>Don't have an account? <a href="register.html">Register</a></p>
+            </div>
+        </form>
     </div>
 </body>
 </html>
