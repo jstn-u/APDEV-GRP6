@@ -13,10 +13,10 @@
             <img src="images/angle-small-right.png" class="menu-icon">
             <div class="sidebar">
                 <div class="shortcut-links">            
-                    <a href="/profile"><img src="images/profile.png"></a>
-                    <a href="/home"><img src="images/home.png"></a>
-                    <a href="/lost"><img src="images/paw-heart.png"></a>
-                    <a href="/adopt"><img src="images/paw.png"></a>
+                    <a href="profile.html"><img src="images/profile.png"></a>
+                    <a href="home.html"><img src="images/home.png"></a>
+                    <a href="lost-found.html"><img src="images/paw-heart.png"></a>
+                    <a href="adoption.html"><img src="images/paw.png"></a>
                     <span class="line"></span> 
                 </div>
             </div>
@@ -38,18 +38,18 @@
         <div class="sub-menu-wrap" id="subMenu">
             <div class="sub-menu">
                 <div class="user-info">
-                    <img src="images/profile-pic.png">
+                    <img src="images/profile-pic.png">                    
                     <h2>username</h2>
                 </div>
             </div>
-        <a href="/editprofile" class="sub-menu-link">
-            <img src="images/profile.png">
-            <p>Edit Profile</p>
-        </a>
-        <a href="/login" class="sub-menu-link">
-            <img src="images/exit.png">
-            <p>Log Out</p>
-        </a>
+            <a href="/editprofile" class="sub-menu-link">
+                <img src="images/user.png">
+                <p>Edit Profile</p>
+            </a>
+            <a href="/login" class="sub-menu-link">
+                <img src="images/exit.png">
+                <p>Log Out</p>
+            </a>
         </div>
     </nav>
 
@@ -63,12 +63,22 @@
     
 <!-- profile page middle content -->
     <div class="profile-top"> 
-        <div class="profile-container1">        
-            <img src="images/banner.png" class="cover-img">
+        <div class="profile-container1">
+            <div>
+                <img src="images/banner.png" class="cover-img">
+                <img src="images/edit.png" class="edit-cover-img-btn">
+            </div>        
+            
+
             <div class="profile-details">
                 <div class="pd-left">
                     <div class="pd-row">
-                        <img src="images/profile-pic.png" class="pd-image">
+                        <div>
+                            <img src="images/profile-pic.png" class="pd-image">
+                            <img src="images/edit.png" class="edit-profile-pic-btn">
+                        </div>
+                       
+
                         <div>
                             <h3>username</h3>
                             <p>"Digital Nomad & Espresso Enthusiast 🌍✈️ | Tech Innovator 💡| Aspiring Polyglot 📚| Part-time Poet 🖋️| Full-time Dreamer 💭| Lover of the stars and everything in between 🌌| Seeking the magic in the mundane | Let's make the impossible, possible together 🚀"</p>
@@ -89,13 +99,7 @@
                                     <img src="images/profile-pic.png" class="user-img">
                                     <div>
                                         <p>User Name</p> 
-                                        <div class="visibility-container">
-                                            <select class="visibility">
-                                              <option value="public">Public</option>
-                                              <option value="friends">Friends Only</option>
-                                              <option value="private">Only Me</option>
-                                            </select>
-                                          </div>
+                                        
                                     </div>
                                 </div>
                                 <div class="input-container">
@@ -114,34 +118,68 @@
                                 </div>
                             </form>                
                         </div>
+                        <div class="write-post-container">
+                            <form action="#">
+                                <div class="user-profile">
+                                    <img src="images/profile-pic.png" class="user-img">
+                                    <div>
+                                        <p>User Name</p> 
+                                        <div class="visibility-container">
+                                            <select class="visibility">
+                                              <option value="public">Lost and Found</option>
+                                              <option value="friends">For Adoption</option>                                  
+                                            </select>
+                                          </div>
+                                    </div>
+                                </div>
+                                <div class="input-container">
+                                    <div class="input-text">
+                                        Title: <input type="text" class="textarea"> 
+                                     </div>
+                                    <div class="input-text">
+                                        Captions: <input type="text" class="textarea"> 
+                                    </div>
+                                    <div class="input-text">
+                                        Pet Name: <input type="text" class="textarea">
+                                    </div>
+                                    <div class="input-text">
+                                        Species / Breed: <input type="text" class="textarea"> 
+                                    </div>
+                                    <div class="input-text">
+                                        Location: <input type="text" class="textarea">                        
+                                    </div>
+                                    
+                                    <div class="add-post-links">
+                                        <div class="input-text">
+                                            Date of Birth: <input type="date">
+                                        </div> 
+                                        <label for="photo-upload" class="custom-file-upload">
+                                            <img src="images/add-image.png" alt="Upload photo"> Upload Photo</label>
+                                        <input id="photo-upload" type="file" class="input-btn">  
+                                                                  
+                                    </div>
+                                     <button type="submit" class="post-btn"> post </button>
+                                </div>
+                            </form>                
+                        </div>
                         <div class="post-container">
                             <div class="user-profile">
-                                <img src="images/profile-pic.png" class="user-img">
+                                <img src="images/profile-pic.png">
                                 <div>
                                     <p>title</p>
                                     <span>username</span>                                     
                                 </div>      
-                                <div class="btn-container">
-                                    <button class="edit-btn">edit</button>
-                                    <button class="delete-btn">delete</button>     
+                                <div class="button-container">
+                                    <button class="edit-post-btn"><img src="images/edit-post.png"></button>
+                                    <button class="delete-post-btn"><img src="images/trash-post.png"></button>     
                                 </div>
                                 
                             </div>    
   
                             <div>
                                 <p class="caption">Found this lost Husky in front of my house. Whoever owns this adorable furball message me ASAP!!! Owner you better reply to me soon OR ELSE I will really end up keeping him:> I think I'll name him Snow</p>
-                            </div>            
-                                <!-- <div class="button-container">
-                                    <button>Videos</button>
-                                    <button>Meaning</button>
-                                    <button>Images</button>
-                                    <button>Shopping</button>
-                                    <button>News</button>
-                                    <button>Maps</button>
-                                    <button>Books</button>
-                                    <button>Flights</button>
-                                    <button>Finance</button>
-                                </div> -->
+                            </div>          
+                              
                                 <img src="images/post-image.jpg" class="post-img">
             
                             <div class="reacts-container">                                         
@@ -187,6 +225,91 @@
                             </div>                                  
                             </div>
                         </div>
+                        
+                        <div class="adopt-post-container">
+                            <div class="post-top">                                            
+                                <div class="adopt-pet-profile">
+                                    <img src="images/cow.jpg" class="pet-profile-img">
+                                    <div class="pet-info">
+                                        <div class="name">
+                                            <small>Name: </small> <div class="pet-name">CoWoo</div>
+                                        </div>                        
+                                        <span><hr></span>
+                                        <div class="birth">
+                                            <small>Date of Birth: </small> <div class="birthdate">12/28/2003</div>
+                                        </div>
+                                        <div class="breed"> 
+                                            <small>Species/Breed: </small> <div class="pet-type">cow</div>
+                                        </div>
+                                        <div class="loc"> 
+                                            <small>Location: </small> <div class="location">omooshu</div>
+                                        </div>
+                                        <div class="date-posted">
+                                            <small>Date Posted: </small> <div class="date">09/03/2024</div>
+                                        </div>
+                                    </div>                
+                                </div>
+                                <div class="captions-col">                
+                                    <div class="user-profile">
+                                        <img src="images/profile-pic.png" class="user-img">
+                                        <div>
+                                            <p>title</p>
+                                            <span>username</span> 
+                                            <div class="button-container2">
+                                                <button class="edit-post-btn2"><img src="images/edit-post.png"></button>
+                                                <button class="delete-post-btn2"><img src="images/trash-post.png"></button>     
+                                            </div>
+                                        </div>  
+                                        <hr>                  
+                                    </div>
+                                    
+                                    <div class="captions2">
+                                        Meet [Cow's Name], a gentle and loving bovine friend ready to find a forever pasture! With a heart as big as their moo, [Cow's Name] is a [age]-year-old [breed] cow with a unique personality that shines brighter than the morning sun on a dewy meadow. This adorable cow enjoys leisurely grazing, peaceful afternoons under the shade of a big oak tree, and the occasional scratch behind the ears. [Cow's Name] is not just a cow, but a companion who appreciates the simple joys of farm life. Whether you're a seasoned farmer or someone with a sizable piece of land looking for a gentle giant to add to your family, [Cow's Name] could be the perfect match. They are up-to-date on all vaccinations, health checks, and come with a health guarantee to ensure they're ready to seamlessly join their new home. Adopting a cow is a rewarding experience that brings a lot of joy and a bit of fun moo-sic into your life. If you're ready to welcome [Cow's Name] into your heart and home, please contact us for more information on how you can adopt this lovable cow. Let's give [Cow's Name] the loving forever home they deserve!
+                                    </div>
+                                    <div class="reacts-container2">                                         
+                                        <div class="like-button2">                        
+                                            <div class="heart-icon2"></div>
+                                            <div class="likes-amount2">0</div>
+                                        <div class="likes-text2">likes</div>
+                                        </div>
+                                        <button  class="view-comments2">
+                                            <img src="images/comment-dots.png">
+                                        </button>                    
+                                    </div>
+                                    <div>
+                                        <input type="text" placeholder="Add a comment..." class="add-comment">                
+                                        <button class="post-comment-btn">Post</button>
+                    
+                                    </div>
+                                    <div class="comment-section2">
+                                            <div class="user-profile-comments">
+                                                <img src="images/profile-pic.png">                            
+                                                <p>username</p>     
+                                            </div>
+                                            <div class="comment2">
+                                                <small>Wow handsome and pretty 😍</small>
+                                            </div>
+                                            <div class="comments-actions2">
+                                                <div class="like-comment-btn2">
+                                                    <div class="like-comment-icon2"><img src="images/heart.png" class="heart-comment-icon"></div>
+                                                    <div class="likes-comment-amount2">0</div>
+                                                    <div class="likes-comment-text2">likes</div>
+                                                </div>
+                                                
+                                                <button class="reply-btn2">reply</button>
+                                                <button class="edit-btn2">edit</button>
+                                                <button class="delete-btn2">delete</button>
+                                            </div>
+                                            <div class="reply-comment2">
+                                                <input type="text" placeholder="Add a reply..." class="add-comment">                
+                                                <button class="post-reply-btn2">Post</button>
+                                            </div>                                   
+                                    </div>       
+                                </div>
+                                
+                            </div>  
+                            
+                        </div>   
             </div>
         </div>
 </div>
@@ -212,6 +335,17 @@
 
 <script>
     document.addEventListener('DOMContentLoaded', function() {
+        const viewCommentsButton = document.querySelector('.view-comments2');
+        const commentSection = document.querySelector('.comment-section2');
+
+        viewCommentsButton.addEventListener('click', function() {
+            commentSection.classList.toggle('show');
+        });
+    });
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
         const replyButtons = document.querySelectorAll('.reply-btn');
         
         replyButtons.forEach(button => {
@@ -221,10 +355,20 @@
             });
         });
     });
-    </script>
-    
+</script>   
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const replyButtons = document.querySelectorAll('.reply-btn2');
+        
+        replyButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const replySection = this.parentElement.nextElementSibling;
+                replySection.style.display = replySection.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    });
+</script> 
 
-</script>
 
 <script>
     const heartIcon = document.querySelector(".like-button .heart-icon");
@@ -244,6 +388,24 @@
 </script>
 
 <script>
+    const heartIcon2 = document.querySelector(".like-button2 .heart-icon2");
+    const likesAmountLabel2 = document.querySelector(".like-button2 .likes-amount2");
+
+    let likesAmount2 = 7;
+    heartIcon2.addEventListener("click", () => {
+        heartIcon2.classList.toggle("liked");
+        if (heartIcon2.classList.contains("liked")) {
+            likesAmount2++;
+        } else {
+            likesAmount2--;
+        }
+
+        likesAmountLabel2.innerHTML = likesAmount2;
+    })
+</script>
+
+
+<script>
     document.addEventListener('DOMContentLoaded', function() {
     const likeBtn = document.querySelector('.like-comment-icon');
     let isLiked = false;
@@ -261,25 +423,60 @@
 
 </script>
 
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    const likeBtn2 = document.querySelector('.like-comment-icon2');
+    let isLiked2 = false;
+    let likeCount2 = parseInt(document.querySelector('.likes-comment-amount2').innerText);
+
+    likeBtn2.addEventListener('click', function() {
+        isLiked2 = !isLiked2; // Toggle like state
+        likeCount2 = isLiked2 ? likeCount2 + 1 : likeCount2 - 1;
+        document.querySelector('.likes-comment-amount2').innerText = likeCount2;
+
+        const heartIcon = document.querySelector('.heart-comment-icon');
+        heartIcon.src = isLiked ? "images/heart-filled.png" : "images/heart.png";
+    });
+});
+
+</script>
+
 <script>
     document.addEventListener('DOMContentLoaded', function() {
         // Edit post functionality
-        document.querySelectorAll('.edit-btn').forEach(function(button) {
+        const postImageInput = document.createElement('input');
+        postImageInput.type = 'file';
+        postImageInput.accept = 'image/*';
+        postImageInput.style.display = 'none';
+        document.body.appendChild(postImageInput);
+
+        document.querySelectorAll('.edit-post-btn').forEach(function(button) {
             button.addEventListener('click', function() {
                 let parentPostContainer = this.closest('.post-container');
                 let captionElement = parentPostContainer.querySelector('.caption');
                 let postImage = parentPostContainer.querySelector('.post-img');
-                
+
+                // Prompt for caption edit
                 let newCaption = prompt("Edit your caption:", captionElement.innerText);
                 if (newCaption !== null) captionElement.innerText = newCaption;
-                
-                let newImageUrl = prompt("Change the image URL (leave blank to keep current image):", postImage.src);
-                if (newImageUrl !== null && newImageUrl !== '') postImage.src = newImageUrl;
+
+                // Trigger the file input for image selection
+                postImageInput.click();
+                postImageInput.onchange = () => {
+                    if (postImageInput.files && postImageInput.files[0]) {
+                        var reader = new FileReader();
+                        reader.onload = function(e) {
+                            postImage.src = e.target.result;
+                        }
+                        reader.readAsDataURL(postImageInput.files[0]);
+                    }
+                };
             });
         });
     
         // Delete post functionality
-        document.querySelectorAll('.delete-btn').forEach(function(button) {
+        document.querySelectorAll('.delete-post-btn').forEach(function(button) {
             button.addEventListener('click', function() {
                 if (confirm("Are you sure you want to delete this post?")) {
                     this.closest('.post-container').remove();
@@ -287,8 +484,54 @@
             });
         });
     });
+
+    document.addEventListener('DOMContentLoaded', function() {
+    const adoptPostImageInput = document.createElement('input');
+    adoptPostImageInput.type = 'file';
+    adoptPostImageInput.accept = 'image/*';
+    adoptPostImageInput.style.display = 'none';
+    document.body.appendChild(adoptPostImageInput);
+
+    document.querySelectorAll('.edit-post-btn2').forEach(function(button) {
+        button.addEventListener('click', function() {
+            let parentAdoptPostContainer = this.closest('.adopt-post-container');
+            let captionElement = parentAdoptPostContainer.querySelector('.captions2');
+            let adoptPostImage = parentAdoptPostContainer.querySelector('.pet-profile-img');
+
+            // Prompt for caption edit
+            let newCaption = prompt("Edit your caption:", captionElement.innerText);
+            if (newCaption !== null) captionElement.innerText = newCaption;
+
+            // Trigger the file input for image selection
+            adoptPostImageInput.click();
+            adoptPostImageInput.onchange = () => {
+                if (adoptPostImageInput.files && adoptPostImageInput.files[0]) {
+                    var reader = new FileReader();
+                    reader.onload = function(e) {
+                        adoptPostImage.src = e.target.result;
+                    }
+                    reader.readAsDataURL(adoptPostImageInput.files[0]);
+                }
+            };
+        });
+    });
+});
+
+
+    document.addEventListener('DOMContentLoaded', function() {
+        // Select all delete buttons for adopt posts
+        document.querySelectorAll('.delete-post-btn2').forEach(function(button) {
+            button.addEventListener('click', function() {
+                if (confirm("Are you sure you want to delete this post?")) {
+                    this.closest('.adopt-post-container').remove();
+                }
+            });
+        });
+    });
+
 </script>
-    
+ 
+
 
 <script>
     document.addEventListener('DOMContentLoaded', function() {
@@ -316,6 +559,30 @@
 
 <script>
     document.addEventListener('DOMContentLoaded', function() {
+        // edit comment functionality
+        document.querySelectorAll('.edit-btn2').forEach(function(button) {
+            button.addEventListener('click', function() {
+                let commentTextElement = this.closest('.comment-section2').querySelector('.comment2 small');
+                let newText = prompt('Edit your comment:', commentTextElement.textContent);
+                if (newText !== null) { // Check if the user pressed cancel
+                    commentTextElement.textContent = newText;
+                }
+            });
+        });
+    
+        //delete comment functionality
+        document.querySelectorAll('.delete-btn2').forEach(function(button) {
+            button.addEventListener('click', function() {
+                if (confirm('Are you sure you want to delete this comment?')) {
+                    this.closest('.comment-section2').remove();
+                }
+            });
+        });
+    });
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
     const editBioBtn = document.querySelector('.edit-bio-btn');
     const bioParagraph = document.querySelector('.profile-details .pd-left .pd-row div p');
 
@@ -327,6 +594,60 @@
     });
 });
 
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const editProfilePicBtn = document.querySelector('.edit-profile-pic-btn');
+        const profilePic = document.querySelector('.pd-image');
+        const editCoverImgBtn = document.querySelector('.edit-cover-img-btn');
+        const coverImg = document.querySelector('.cover-img');
+
+        // Function to update image source
+        function updateImage(input, imageElement) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+                reader.onload = function(e) {
+                    imageElement.src = e.target.result;
+                }
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+
+        // Temporarily creating an invisible file input for profile picture change
+        const profilePicInput = document.createElement('input');
+        profilePicInput.type = 'file';
+        profilePicInput.accept = 'image/*';
+        profilePicInput.style.display = 'none';
+        document.body.appendChild(profilePicInput);
+
+        // Listening for the profile picture edit button click
+        editProfilePicBtn.addEventListener('click', function() {
+            profilePicInput.click();
+        });
+
+        // Change profile picture on file select
+        profilePicInput.addEventListener('change', function() {
+            updateImage(this, profilePic);
+        });
+
+        // Temporarily creating an invisible file input for cover image change
+        const coverImgInput = document.createElement('input');
+        coverImgInput.type = 'file';
+        coverImgInput.accept = 'image/*';
+        coverImgInput.style.display = 'none';
+        document.body.appendChild(coverImgInput);
+
+        // Listening for the cover image edit button click
+        editCoverImgBtn.addEventListener('click', function() {
+            coverImgInput.click();
+        });
+
+        // Change cover image on file select
+        coverImgInput.addEventListener('change', function() {
+            updateImage(this, coverImg);
+        });
+    });
 </script>
 
 </body>
