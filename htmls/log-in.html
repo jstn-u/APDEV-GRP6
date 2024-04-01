@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, resizable=no">
     <title>Log In</title>
-    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
     <div class="wrapper">
-        <form action="/login" method="post">
+        <form action="home.html">
             <h1>Log In</h1>
             <div class="input-box">
-                <input type="text" id="name" name="username" placeholder="Username" required>
+                <input type="text" placeholder="Username" required>
                 <img src="images/user.png" class="user-icon">
             </div>
             <div class="input-box">
-                <input type="password" id="password" name="password" placeholder="Password" required>
+                <input type="password" placeholder="Password" required id="password">
                 <img src="images/eye.png" id="eyeicon" class="show-icon">
             </div>
 
@@ -36,7 +36,7 @@
             <button type="submit" class="btn">Log In</button>          
 
             <div class="register-link">
-                <p>Don't have an account? <a href="/signup">Register</a></p>
+                <p>Don't have an account? <a href="register.html">Register</a></p>
             </div>
         </form>
     </div>
