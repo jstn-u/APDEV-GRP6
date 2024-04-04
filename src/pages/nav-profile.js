@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/style.css';
-import profileImage from '../styles/images/profile.png';
+import profileIcon from '../styles/images/profile.png';
 import homeImage from '../styles/images/home.png';
 import pawHeartImage from '../styles/images/paw-heart.png';
 import pawImage from '../styles/images/paw.png';
@@ -15,7 +15,7 @@ function NavBarProfile() {
                 <div className="nav-left flex-div">
                     <div className="sidebar-profile">
                         <div className="shortcut-links-profile">            
-                            <a href="./profile"><img src={profileImage} alt="Profile" /></a>
+                            <a href="./profile"><img src={profileIcon} alt="Profile"/></a>
                             <a href="./home"><img src={homeImage} alt="Home"/></a>
                             <a href="./lost"><img src={pawHeartImage} alt="Lost"/></a>
                             <a href="./adopt"><img src={pawImage} alt="Adopt"/></a>

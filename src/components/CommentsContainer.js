@@ -1,4 +1,3 @@
-// CommentsContainer.js
 import React, { useState } from 'react';
 import useNode from "../hooks/useNode";
 import Comment from './Comment';

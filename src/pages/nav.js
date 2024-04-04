@@ -32,7 +32,7 @@ class NavBar extends Component {
           </div>
         </div>
         <div class="nav-right flex-div">    
-            <a href="/login"><img src="images/exit.png" class="user-icon"/></a>      
+            <a href="/login"><img src="images/exit.png" class="exit-icon-profile"/></a>      
         </div>         
         
       </nav>
