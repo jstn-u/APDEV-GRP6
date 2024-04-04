@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/style';
+import '../styles/style.css';
 
 
 class LostPostInput extends React.Component {

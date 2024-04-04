@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/style';
+import '../styles/style.css';
 import NavBarProfile from './nav-profile';
 import MainPostInput from './main-post-input';
 import MainPost from './main-post';

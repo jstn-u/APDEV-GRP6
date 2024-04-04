@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/style';
+import '../styles/style.css';
 import NavBar from './nav';
 import LostPostInput from './lost-post-input';
 import LostPost from './lost-post';

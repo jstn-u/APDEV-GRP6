@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/style'; // Adjust the path according to your project structure
+import '../styles/style.css';
 
 class login extends React.Component {
    

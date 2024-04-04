@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/style';
+import '../styles/style.css';
 import CommentsContainer from '../components/CommentsContainer'; // Ensure this path is correct
 
 class MainPost extends React.Component {

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import menuIcon from '../styles/images/menu.png'; // Make sure the path matches where you store your images
 import logoIcon from '../styles/images/logo.png';
 import searchIcon from '../styles/images/search.png';
-import '../styles/style';
+import '../styles/style.css';
 
 class NavBar extends Component {
   constructor(props) {

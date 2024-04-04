@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/style';
+import '../styles/style.css';
 import profileImage from '../styles/images/profile.png';
 import homeImage from '../styles/images/home.png';
 import pawHeartImage from '../styles/images/paw-heart.png';
