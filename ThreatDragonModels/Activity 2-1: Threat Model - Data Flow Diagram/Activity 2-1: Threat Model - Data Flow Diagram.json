@@ -2361,7 +2361,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Web Application"
+                "text": "Web \nApplication"
               },
               "body": {
                 "stroke": "red",
@@ -2457,7 +2457,7 @@
             "id": "3da34f66-63a1-415c-abde-758f1a9ce835",
             "data": {
               "type": "tm.Process",
-              "name": "Web Application",
+              "name": "Web \nApplication",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -2526,6 +2526,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 18,
             "ports": {
               "groups": {
                 "top": {
@@ -2609,7 +2610,6 @@
               ]
             },
             "id": "c2bd92c7-fe81-4106-bbdd-d6ed015dfcda",
-            "zIndex": 18,
             "data": {
               "type": "tm.Process",
               "name": "Authorization\nProvider",
